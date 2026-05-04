@@ -1,0 +1,4155 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-03-09T20:50:37+00:00",
+  "coordinateSystem": {
+    "width": 1000,
+    "height": 1000,
+    "origin": "top-left"
+  },
+  "floors": {
+    "G": {
+      "nodes": {
+        "G_ENT_1": {
+          "id": "G_ENT_1",
+          "x": 554.1863405342765,
+          "y": 251.87373772848736,
+          "kind": "entrance",
+          "label": "Entrance 1 (Women Entrance)"
+        },
+        "G_ENT_3": {
+          "id": "G_ENT_3",
+          "x": 42.36560671928088,
+          "y": 498.98121878360524,
+          "kind": "entrance",
+          "label": "Entrance 3 (Main Entrance)"
+        },
+        "G_ENT_4": {
+          "id": "G_ENT_4",
+          "x": 593.3643452251076,
+          "y": 760.0176322080599,
+          "kind": "entrance",
+          "label": "Entrance 4 (Male Entrance)"
+        },
+        "G_COR_1": {
+          "id": "G_COR_1",
+          "x": 152.81571671333774,
+          "y": 498.7085257305855,
+          "kind": "corridor"
+        },
+        "G_COR_2": {
+          "id": "G_COR_2",
+          "x": 158.21312913214118,
+          "y": 455.2531179826244,
+          "kind": "corridor"
+        },
+        "G_COR_3": {
+          "id": "G_COR_3",
+          "x": 228.61834856595246,
+          "y": 410.00782071803695,
+          "kind": "corridor"
+        },
+        "G_COR_5": {
+          "id": "G_COR_5",
+          "x": 194.29353528817217,
+          "y": 430.4826256906281,
+          "kind": "corridor"
+        },
+        "G_COR_6": {
+          "id": "G_COR_6",
+          "x": 157.82231605590772,
+          "y": 544.1752039926258,
+          "kind": "corridor"
+        },
+        "G_COR_4": {
+          "id": "G_COR_4",
+          "x": 190.8227867015653,
+          "y": 382.399373365984,
+          "kind": "corridor"
+        },
+        "G_COR_7": {
+          "id": "G_COR_7",
+          "x": 390.69253139962495,
+          "y": 286.28450521953727,
+          "kind": "corridor"
+        },
+        "G_COR_8": {
+          "id": "G_COR_8",
+          "x": 308.2767910325114,
+          "y": 393.2997572566334,
+          "kind": "corridor"
+        },
+        "G_COR_9": {
+          "id": "G_COR_9",
+          "x": 385.5716358825058,
+          "y": 341.4144425990786,
+          "kind": "corridor"
+        },
+        "G_COR_10": {
+          "id": "G_COR_10",
+          "x": 447.27983428341594,
+          "y": 303.841535048523,
+          "kind": "corridor"
+        },
+        "G_COR_11": {
+          "id": "G_COR_11",
+          "x": 350.1221722342741,
+          "y": 314.78261579503334,
+          "kind": "corridor"
+        },
+        "G_COR_12": {
+          "id": "G_COR_12",
+          "x": 56.860688307382965,
+          "y": 499.32899010255363,
+          "kind": "corridor"
+        },
+        "G_COR_13": {
+          "id": "G_COR_13",
+          "x": 159.48281774505585,
+          "y": 454.34551409619843,
+          "kind": "corridor"
+        },
+        "G_COR_14": {
+          "id": "G_COR_14",
+          "x": 190.63206671718746,
+          "y": 382.6112779204335,
+          "kind": "corridor"
+        },
+        "G_COR_15": {
+          "id": "G_COR_15",
+          "x": 191.45560783410923,
+          "y": 279.4232534254005,
+          "kind": "corridor"
+        },
+        "G_COR_16": {
+          "id": "G_COR_16",
+          "x": 190.63330462051957,
+          "y": 204.67648240123356,
+          "kind": "corridor"
+        },
+        "G_COR_17": {
+          "id": "G_COR_17",
+          "x": 519.1000138821408,
+          "y": 274.11997314402083,
+          "kind": "corridor"
+        },
+        "G_COR_18": {
+          "id": "G_COR_18",
+          "x": 499.5476113831952,
+          "y": 263.96976986644654,
+          "kind": "corridor"
+        },
+        "G_COR_19": {
+          "id": "G_COR_19",
+          "x": 584.8322909037714,
+          "y": 320.04241202972145,
+          "kind": "corridor"
+        },
+        "G_COR_20": {
+          "id": "G_COR_20",
+          "x": 618.7337625137928,
+          "y": 345.04859895724735,
+          "kind": "corridor"
+        },
+        "G_COR_21": {
+          "id": "G_COR_21",
+          "x": 655.560113906421,
+          "y": 370.7758740418571,
+          "kind": "corridor"
+        },
+        "G_COR_22": {
+          "id": "G_COR_22",
+          "x": 690.9965884736755,
+          "y": 391.72843825935865,
+          "kind": "corridor"
+        },
+        "G_COR_23": {
+          "id": "G_COR_23",
+          "x": 710.1138366890773,
+          "y": 404.946064336137,
+          "kind": "corridor"
+        },
+        "G_COR_25": {
+          "id": "G_COR_25",
+          "x": 735.7668780892596,
+          "y": 424.6871120444991,
+          "kind": "corridor"
+        },
+        "G_COR_24": {
+          "id": "G_COR_24",
+          "x": 775.6819127337559,
+          "y": 448.64447153365603,
+          "kind": "corridor"
+        },
+        "G_COR_26": {
+          "id": "G_COR_26",
+          "x": 818.4042669258914,
+          "y": 476.4548911289462,
+          "kind": "corridor"
+        },
+        "G_COR_28": {
+          "id": "G_COR_28",
+          "x": 828.9207539060277,
+          "y": 519.1339055506921,
+          "kind": "corridor"
+        },
+        "G_COR_29": {
+          "id": "G_COR_29",
+          "x": 773.5743649521908,
+          "y": 553.3963820970422,
+          "kind": "corridor"
+        },
+        "G_COR_30": {
+          "id": "G_COR_30",
+          "x": 190.34421018011903,
+          "y": 127.48141304049837,
+          "kind": "corridor"
+        },
+        "G_COR_31": {
+          "id": "G_COR_31",
+          "x": 224.08939679959173,
+          "y": 590.8402553979511,
+          "kind": "corridor"
+        },
+        "G_COR_32": {
+          "id": "G_COR_32",
+          "x": 259.86209646520035,
+          "y": 573.0625974170432,
+          "kind": "corridor"
+        },
+        "G_COR_33": {
+          "id": "G_COR_33",
+          "x": 189.12841682141215,
+          "y": 621.0162650321616,
+          "kind": "corridor"
+        },
+        "G_COR_34": {
+          "id": "G_COR_34",
+          "x": 189.2188619627217,
+          "y": 655.8708851770448,
+          "kind": "corridor"
+        },
+        "G_COR_35": {
+          "id": "G_COR_35",
+          "x": 190.28213788432862,
+          "y": 683.5916753850088,
+          "kind": "corridor"
+        },
+        "G_COR_36": {
+          "id": "G_COR_36",
+          "x": 187.96642940364927,
+          "y": 705.2831107054282,
+          "kind": "corridor"
+        },
+        "G_COR_37": {
+          "id": "G_COR_37",
+          "x": 190.06523244248984,
+          "y": 772.1852841267046,
+          "kind": "corridor"
+        },
+        "G_COR_38": {
+          "id": "G_COR_38",
+          "x": 233.05282530727152,
+          "y": 708.9184709591765,
+          "kind": "corridor"
+        },
+        "G_COR_39": {
+          "id": "G_COR_39",
+          "x": 286.2791234222892,
+          "y": 746.0684901521773,
+          "kind": "corridor"
+        },
+        "G_COR_40": {
+          "id": "G_COR_40",
+          "x": 330.36443467597604,
+          "y": 774.7356450915299,
+          "kind": "corridor"
+        },
+        "G_COR_41": {
+          "id": "G_COR_41",
+          "x": 363.9647515452357,
+          "y": 799.557310360899,
+          "kind": "corridor"
+        },
+        "G_COR_42": {
+          "id": "G_COR_42",
+          "x": 419.8645745793118,
+          "y": 764.505025064263,
+          "kind": "corridor"
+        },
+        "G_COR_43": {
+          "id": "G_COR_43",
+          "x": 442.71569349023474,
+          "y": 776.616258172347,
+          "kind": "corridor"
+        },
+        "G_COR_44": {
+          "id": "G_COR_44",
+          "x": 466.8079916947357,
+          "y": 762.0538467508585,
+          "kind": "corridor"
+        },
+        "G_COR_45": {
+          "id": "G_COR_45",
+          "x": 503.7372983506071,
+          "y": 781.5573882712383,
+          "kind": "corridor"
+        },
+        "G_COR_46": {
+          "id": "G_COR_46",
+          "x": 359.2273759847173,
+          "y": 815.8050143840251,
+          "kind": "corridor"
+        },
+        "G_COR_47": {
+          "id": "G_COR_47",
+          "x": 318.88219722813864,
+          "y": 842.9637262449298,
+          "kind": "corridor"
+        },
+        "G_COR_48": {
+          "id": "G_COR_48",
+          "x": 282.2685846580126,
+          "y": 865.9520372148909,
+          "kind": "corridor"
+        },
+        "G_COR_49": {
+          "id": "G_COR_49",
+          "x": 226.58623290339247,
+          "y": 905.4827438031108,
+          "kind": "corridor"
+        },
+        "G_COR_50": {
+          "id": "G_COR_50",
+          "x": 203.82239904522476,
+          "y": 917.1429898466495,
+          "kind": "corridor"
+        },
+        "G_COR_51": {
+          "id": "G_COR_51",
+          "x": 188.9218771147571,
+          "y": 929.9963949308503,
+          "kind": "corridor"
+        },
+        "G_COR_52": {
+          "id": "G_COR_52",
+          "x": 190.0394623721484,
+          "y": 839.3884053566959,
+          "kind": "corridor"
+        },
+        "G_COR_27": {
+          "id": "G_COR_27",
+          "x": 841.3561552771042,
+          "y": 490.256457973522,
+          "kind": "corridor"
+        },
+        "G_COR_53": {
+          "id": "G_COR_53",
+          "x": 854.6044757104717,
+          "y": 501.22320213123027,
+          "kind": "corridor"
+        },
+        "G_COR_54": {
+          "id": "G_COR_54",
+          "x": 880.635981592331,
+          "y": 498.53308052060606,
+          "kind": "corridor"
+        },
+        "G_COR_55": {
+          "id": "G_COR_55",
+          "x": 733.3535798431765,
+          "y": 579.2238789921845,
+          "kind": "corridor"
+        },
+        "G_COR_56": {
+          "id": "G_COR_56",
+          "x": 697.3954654415036,
+          "y": 607.8047605094481,
+          "kind": "corridor"
+        },
+        "G_COR_57": {
+          "id": "G_COR_57",
+          "x": 661.3497020403267,
+          "y": 633.1055586608696,
+          "kind": "corridor"
+        },
+        "G_COR_58": {
+          "id": "G_COR_58",
+          "x": 621.2040293745998,
+          "y": 657.935419359449,
+          "kind": "corridor"
+        },
+        "G_COR_59": {
+          "id": "G_COR_59",
+          "x": 581.071082967146,
+          "y": 680.4388679007358,
+          "kind": "corridor"
+        },
+        "G_COR_60": {
+          "id": "G_COR_60",
+          "x": 522.0383373128732,
+          "y": 717.2116172092894,
+          "kind": "corridor"
+        },
+        "G_COR_61": {
+          "id": "G_COR_61",
+          "x": 549.0254929429682,
+          "y": 701.5128166383461,
+          "kind": "corridor"
+        },
+        "G_COR_62": {
+          "id": "G_COR_62",
+          "x": 491.33583108059423,
+          "y": 741.0107422590739,
+          "kind": "corridor"
+        },
+        "G_COR_63": {
+          "id": "G_COR_63",
+          "x": 474.9459867439409,
+          "y": 753.0981181126375,
+          "kind": "corridor"
+        },
+        "G_COR_64": {
+          "id": "G_COR_64",
+          "x": 459.7558841671037,
+          "y": 723.7087225543623,
+          "kind": "corridor"
+        },
+        "G_COR_65": {
+          "id": "G_COR_65",
+          "x": 474.71441918752396,
+          "y": 713.9480039974479,
+          "kind": "corridor"
+        },
+        "G_COR_66": {
+          "id": "G_COR_66",
+          "x": 447.6661209147093,
+          "y": 719.3954248255758,
+          "kind": "corridor"
+        },
+        "G_COR_67": {
+          "id": "G_COR_67",
+          "x": 424.9455364980009,
+          "y": 733.8429369531717,
+          "kind": "corridor"
+        },
+        "G_COR_68": {
+          "id": "G_COR_68",
+          "x": 387.89303031358236,
+          "y": 712.9872829294125,
+          "kind": "corridor"
+        },
+        "G_COR_69": {
+          "id": "G_COR_69",
+          "x": 345.1719511040528,
+          "y": 685.5040291701018,
+          "kind": "corridor"
+        },
+        "G_COR_70": {
+          "id": "G_COR_70",
+          "x": 387.5030711857637,
+          "y": 658.2674489826446,
+          "kind": "corridor"
+        },
+        "G_COR_71": {
+          "id": "G_COR_71",
+          "x": 307.36877134027105,
+          "y": 605.4586654671932,
+          "kind": "corridor"
+        },
+        "G_COR_72": {
+          "id": "G_COR_72",
+          "x": 379.8390801632785,
+          "y": 555.0263270578498,
+          "kind": "corridor"
+        },
+        "G_COR_73": {
+          "id": "G_COR_73",
+          "x": 252.7382823541967,
+          "y": 428.20828165503013,
+          "kind": "corridor"
+        },
+        "G_COR_74": {
+          "id": "G_COR_74",
+          "x": 213.0942596595459,
+          "y": 265.6862537082931,
+          "kind": "corridor"
+        },
+        "G_COR_75": {
+          "id": "G_COR_75",
+          "x": 259.06629721870075,
+          "y": 294.0503258387563,
+          "kind": "corridor"
+        },
+        "G_COR_76": {
+          "id": "G_COR_76",
+          "x": 346.3056862309325,
+          "y": 234.30197995539686,
+          "kind": "corridor"
+        },
+        "G_COR_77": {
+          "id": "G_COR_77",
+          "x": 462.54874562732834,
+          "y": 237.91015576574353,
+          "kind": "corridor"
+        },
+        "G_COR_78": {
+          "id": "G_COR_78",
+          "x": 440.77568826408395,
+          "y": 223.89056208800284,
+          "kind": "corridor"
+        },
+        "G_COR_79": {
+          "id": "G_COR_79",
+          "x": 420.38695679114386,
+          "y": 235.93327538114343,
+          "kind": "corridor"
+        },
+        "G_COR_80": {
+          "id": "G_COR_80",
+          "x": 396.22921603489726,
+          "y": 217.92248941391853,
+          "kind": "corridor"
+        },
+        "G_COR_81": {
+          "id": "G_COR_81",
+          "x": 367.3776912736359,
+          "y": 198.26437585854117,
+          "kind": "corridor"
+        },
+        "G_COR_82": {
+          "id": "G_COR_82",
+          "x": 334.55905833240274,
+          "y": 201.81704632988104,
+          "kind": "corridor"
+        },
+        "G_COR_83": {
+          "id": "G_COR_83",
+          "x": 346.50951506157423,
+          "y": 419.84977891348905,
+          "kind": "corridor"
+        },
+        "G_COR_84": {
+          "id": "G_COR_84",
+          "x": 371.5126295533906,
+          "y": 438.3029662485978,
+          "kind": "corridor"
+        },
+        "G_COR_86": {
+          "id": "G_COR_86",
+          "x": 630.5207853621073,
+          "y": 641.3443523258103,
+          "kind": "corridor"
+        },
+        "G_COR_85": {
+          "id": "G_COR_85",
+          "x": 144.17050978099442,
+          "y": 443.9351657940975,
+          "kind": "corridor"
+        }
+      },
+      "edges": [
+        {
+          "from": "G_COR_3",
+          "to": "G_COR_5",
+          "distance": 39.967617457388236
+        },
+        {
+          "from": "G_COR_5",
+          "to": "G_COR_2",
+          "distance": 43.764974543257864
+        },
+        {
+          "from": "G_COR_6",
+          "to": "G_COR_1",
+          "distance": 45.74150051278283
+        },
+        {
+          "from": "G_COR_4",
+          "to": "G_COR_3",
+          "distance": 46.80524395658886
+        },
+        {
+          "from": "G_COR_8",
+          "to": "G_COR_9",
+          "distance": 93.09446233529778
+        },
+        {
+          "from": "G_COR_9",
+          "to": "G_COR_10",
+          "distance": 72.24697316627656
+        },
+        {
+          "from": "G_COR_9",
+          "to": "G_COR_11",
+          "distance": 44.33868144034015
+        },
+        {
+          "from": "G_COR_1",
+          "to": "G_COR_12",
+          "distance": 95.95703440824164
+        },
+        {
+          "from": "G_COR_1",
+          "to": "G_COR_13",
+          "distance": 44.86119745882738
+        },
+        {
+          "from": "G_COR_14",
+          "to": "G_COR_15",
+          "distance": 103.19131077352779
+        },
+        {
+          "from": "G_COR_15",
+          "to": "G_COR_4",
+          "distance": 102.97806436617087
+        },
+        {
+          "from": "G_COR_15",
+          "to": "G_COR_16",
+          "distance": 74.75129404307542
+        },
+        {
+          "from": "G_ENT_1",
+          "to": "G_COR_17",
+          "distance": 41.54449792816975
+        },
+        {
+          "from": "G_COR_17",
+          "to": "G_COR_19",
+          "distance": 80.18480302188995
+        },
+        {
+          "from": "G_COR_19",
+          "to": "G_COR_20",
+          "distance": 42.126228907646784
+        },
+        {
+          "from": "G_COR_20",
+          "to": "G_COR_21",
+          "distance": 44.92296562085482
+        },
+        {
+          "from": "G_COR_23",
+          "to": "G_COR_25",
+          "distance": 32.369545837149126
+        },
+        {
+          "from": "G_COR_28",
+          "to": "G_COR_29",
+          "distance": 65.09331816184047
+        },
+        {
+          "from": "G_COR_16",
+          "to": "G_COR_30",
+          "distance": 77.19561068612767
+        },
+        {
+          "from": "G_COR_6",
+          "to": "G_COR_31",
+          "distance": 81.04907780444873
+        },
+        {
+          "from": "G_COR_31",
+          "to": "G_COR_32",
+          "distance": 39.94660391888117
+        },
+        {
+          "from": "G_COR_31",
+          "to": "G_COR_33",
+          "distance": 46.182915439355305
+        },
+        {
+          "from": "G_COR_33",
+          "to": "G_COR_34",
+          "distance": 34.85473749388568
+        },
+        {
+          "from": "G_COR_34",
+          "to": "G_COR_35",
+          "distance": 27.74117455046599
+        },
+        {
+          "from": "G_COR_35",
+          "to": "G_COR_36",
+          "distance": 21.81469394759934
+        },
+        {
+          "from": "G_COR_36",
+          "to": "G_COR_37",
+          "distance": 66.93508633509327
+        },
+        {
+          "from": "G_COR_35",
+          "to": "G_COR_38",
+          "distance": 49.70692383045612
+        },
+        {
+          "from": "G_COR_38",
+          "to": "G_COR_39",
+          "distance": 64.90888026355923
+        },
+        {
+          "from": "G_COR_39",
+          "to": "G_COR_40",
+          "distance": 52.58631419534263
+        },
+        {
+          "from": "G_COR_40",
+          "to": "G_COR_41",
+          "distance": 41.7743505091253
+        },
+        {
+          "from": "G_COR_41",
+          "to": "G_COR_42",
+          "distance": 65.98070111599142
+        },
+        {
+          "from": "G_COR_42",
+          "to": "G_COR_43",
+          "distance": 25.862242804511162
+        },
+        {
+          "from": "G_COR_43",
+          "to": "G_COR_44",
+          "distance": 28.151423750554738
+        },
+        {
+          "from": "G_COR_44",
+          "to": "G_COR_45",
+          "distance": 41.76316345681405
+        },
+        {
+          "from": "G_COR_41",
+          "to": "G_COR_46",
+          "distance": 16.924261083560005
+        },
+        {
+          "from": "G_COR_46",
+          "to": "G_COR_47",
+          "distance": 48.634648953641424
+        },
+        {
+          "from": "G_COR_47",
+          "to": "G_COR_48",
+          "distance": 43.232153158117406
+        },
+        {
+          "from": "G_COR_48",
+          "to": "G_COR_49",
+          "distance": 68.28763475395223
+        },
+        {
+          "from": "G_COR_49",
+          "to": "G_COR_50",
+          "distance": 25.576424099512465
+        },
+        {
+          "from": "G_COR_50",
+          "to": "G_COR_51",
+          "distance": 19.678302164031017
+        },
+        {
+          "from": "G_COR_51",
+          "to": "G_COR_52",
+          "distance": 90.61488162259893
+        },
+        {
+          "from": "G_COR_25",
+          "to": "G_COR_24",
+          "distance": 46.55282015478798
+        },
+        {
+          "from": "G_COR_24",
+          "to": "G_COR_26",
+          "distance": 50.97665137868884
+        },
+        {
+          "from": "G_COR_25",
+          "to": "D_GW112",
+          "distance": 31.12292350311213
+        },
+        {
+          "from": "G_COR_19",
+          "to": "D_GW103",
+          "distance": 28.837003570988156
+        },
+        {
+          "from": "G_COR_20",
+          "to": "D_GW104",
+          "distance": 22.725723285572435
+        },
+        {
+          "from": "G_COR_20",
+          "to": "D_GW105",
+          "distance": 23.021837957070336
+        },
+        {
+          "from": "G_COR_24",
+          "to": "D_GW113",
+          "distance": 27.06776222730934
+        },
+        {
+          "from": "G_COR_28",
+          "to": "G_COR_53",
+          "distance": 31.312088124364898
+        },
+        {
+          "from": "G_COR_53",
+          "to": "G_COR_27",
+          "distance": 17.198472947497677
+        },
+        {
+          "from": "G_COR_27",
+          "to": "G_COR_26",
+          "distance": 26.781942167285628
+        },
+        {
+          "from": "G_COR_53",
+          "to": "G_COR_54",
+          "distance": 26.17013665912393
+        },
+        {
+          "from": "G_COR_29",
+          "to": "G_COR_55",
+          "distance": 47.799279813132024
+        },
+        {
+          "from": "G_COR_55",
+          "to": "G_COR_56",
+          "distance": 45.93313378845011
+        },
+        {
+          "from": "G_COR_56",
+          "to": "G_COR_57",
+          "distance": 44.03893103008512
+        },
+        {
+          "from": "G_COR_57",
+          "to": "G_COR_58",
+          "distance": 47.203781798649906
+        },
+        {
+          "from": "G_COR_58",
+          "to": "G_COR_59",
+          "distance": 46.01150490468551
+        },
+        {
+          "from": "G_COR_59",
+          "to": "G_COR_61",
+          "distance": 38.35402397914869
+        },
+        {
+          "from": "G_COR_61",
+          "to": "G_COR_60",
+          "distance": 31.22112919753577
+        },
+        {
+          "from": "G_COR_60",
+          "to": "G_COR_62",
+          "distance": 38.84639290948913
+        },
+        {
+          "from": "G_COR_62",
+          "to": "G_COR_63",
+          "distance": 20.364961389726187
+        },
+        {
+          "from": "G_COR_63",
+          "to": "G_COR_44",
+          "distance": 12.100910662522084
+        },
+        {
+          "from": "G_COR_62",
+          "to": "G_COR_64",
+          "distance": 36.0090673708874
+        },
+        {
+          "from": "G_COR_64",
+          "to": "G_COR_65",
+          "distance": 17.86139403026629
+        },
+        {
+          "from": "G_COR_64",
+          "to": "G_COR_66",
+          "distance": 12.836156465083347
+        },
+        {
+          "from": "G_COR_66",
+          "to": "G_COR_67",
+          "distance": 26.924998847053015
+        },
+        {
+          "from": "G_COR_67",
+          "to": "G_COR_68",
+          "distance": 42.518778431478
+        },
+        {
+          "from": "G_COR_69",
+          "to": "G_COR_68",
+          "distance": 50.79783308395702
+        },
+        {
+          "from": "G_COR_69",
+          "to": "G_COR_70",
+          "distance": 50.336418502710465
+        },
+        {
+          "from": "G_COR_70",
+          "to": "G_COR_71",
+          "distance": 95.97017051203532
+        },
+        {
+          "from": "G_COR_32",
+          "to": "G_COR_71",
+          "distance": 57.501212011536104
+        },
+        {
+          "from": "G_COR_65",
+          "to": "G_COR_70",
+          "distance": 103.47049544213398
+        },
+        {
+          "from": "G_COR_52",
+          "to": "G_COR_37",
+          "distance": 67.20312617095604
+        },
+        {
+          "from": "G_ENT_4",
+          "to": "G_COR_60",
+          "distance": 83.18506070666231
+        },
+        {
+          "from": "G_COR_71",
+          "to": "G_COR_72",
+          "distance": 88.29137227575865
+        },
+        {
+          "from": "G_COR_8",
+          "to": "G_COR_73",
+          "distance": 65.59825471675825
+        },
+        {
+          "from": "G_COR_73",
+          "to": "G_COR_3",
+          "distance": 30.216352927980925
+        },
+        {
+          "from": "G_COR_11",
+          "to": "G_COR_7",
+          "distance": 49.579192703983885
+        },
+        {
+          "from": "G_COR_15",
+          "to": "G_COR_74",
+          "distance": 25.63077084385646
+        },
+        {
+          "from": "G_COR_74",
+          "to": "G_COR_75",
+          "distance": 54.01804166352628
+        },
+        {
+          "from": "G_COR_75",
+          "to": "G_COR_76",
+          "distance": 105.73824204622024
+        },
+        {
+          "from": "G_COR_17",
+          "to": "G_COR_18",
+          "distance": 22.030049252256692
+        },
+        {
+          "from": "G_COR_18",
+          "to": "G_COR_10",
+          "distance": 65.7394720216618
+        },
+        {
+          "from": "G_COR_18",
+          "to": "G_COR_77",
+          "distance": 45.25505004193694
+        },
+        {
+          "from": "G_COR_77",
+          "to": "G_COR_78",
+          "distance": 25.896235900842374
+        },
+        {
+          "from": "G_COR_78",
+          "to": "G_COR_79",
+          "distance": 23.679681470333236
+        },
+        {
+          "from": "G_COR_79",
+          "to": "G_COR_80",
+          "distance": 30.132786953801723
+        },
+        {
+          "from": "G_COR_80",
+          "to": "G_COR_81",
+          "distance": 34.912059658602054
+        },
+        {
+          "from": "G_COR_81",
+          "to": "G_COR_82",
+          "distance": 33.01036406356833
+        },
+        {
+          "from": "G_COR_82",
+          "to": "G_COR_76",
+          "distance": 34.5435113970871
+        },
+        {
+          "from": "G_COR_21",
+          "to": "G_COR_22",
+          "distance": 41.167386084669076
+        },
+        {
+          "from": "G_COR_22",
+          "to": "G_COR_23",
+          "distance": 23.241661266673983
+        },
+        {
+          "from": "G_COR_22",
+          "to": "D_GW106",
+          "distance": 29.84237205945074
+        },
+        {
+          "from": "G_COR_21",
+          "to": "D_GW108",
+          "distance": 32.20261916843361
+        },
+        {
+          "from": "G_COR_29",
+          "to": "D_GE113",
+          "distance": 24.30677447954351
+        },
+        {
+          "from": "G_COR_45",
+          "to": "D_GE520",
+          "distance": 22.305023432946978
+        },
+        {
+          "from": "G_COR_21",
+          "to": "D_GW109",
+          "distance": 28.429887228005224
+        },
+        {
+          "from": "G_COR_56",
+          "to": "D_GE109",
+          "distance": 23.457833737557625
+        },
+        {
+          "from": "G_COR_23",
+          "to": "D_GW_LIB_F",
+          "distance": 41.034130123201614
+        },
+        {
+          "from": "G_COR_8",
+          "to": "G_COR_83",
+          "distance": 46.54723232010662
+        },
+        {
+          "from": "G_COR_83",
+          "to": "G_COR_84",
+          "distance": 31.075325535149172
+        },
+        {
+          "from": "G_COR_12",
+          "to": "G_ENT_3",
+          "distance": 14.499252916478802
+        },
+        {
+          "from": "G_COR_58",
+          "to": "D_GE104",
+          "distance": 29.669445192825588
+        },
+        {
+          "from": "G_COR_57",
+          "to": "D_GE106",
+          "distance": 24.634222441841647
+        },
+        {
+          "from": "G_COR_57",
+          "to": "D_GE107",
+          "distance": 32.87202719549528
+        },
+        {
+          "from": "G_COR_86",
+          "to": "G_COR_57",
+          "distance": 31.91081046614241
+        },
+        {
+          "from": "G_COR_86",
+          "to": "D_GE105",
+          "distance": 23.264165838061714
+        },
+        {
+          "from": "G_COR_55",
+          "to": "D_GE112",
+          "distance": 21.625217106626003
+        },
+        {
+          "from": "G_COR_28",
+          "to": "D_GE114",
+          "distance": 20.776574237499403
+        },
+        {
+          "from": "G_COR_26",
+          "to": "D_GW114",
+          "distance": 27.52195460014478
+        },
+        {
+          "from": "G_COR_59",
+          "to": "D_GE103",
+          "distance": 28.120826597099217
+        },
+        {
+          "from": "G_COR_45",
+          "to": "D_GE518",
+          "distance": 26.25792719164841
+        },
+        {
+          "from": "G_COR_45",
+          "to": "D_GE516",
+          "distance": 32.7500632574104
+        },
+        {
+          "from": "G_COR_68",
+          "to": "D_GE506",
+          "distance": 14.09392998989817
+        },
+        {
+          "from": "G_COR_68",
+          "to": "D_GE508",
+          "distance": 26.57093015386596
+        },
+        {
+          "from": "G_COR_72",
+          "to": "D_GE_CAFE_M1",
+          "distance": 40.23400646321255
+        },
+        {
+          "from": "G_COR_84",
+          "to": "D_GE_CAFE_M2",
+          "distance": 44.875872459402956
+        },
+        {
+          "from": "G_COR_83",
+          "to": "D_GW402",
+          "distance": 28.559888051031045
+        },
+        {
+          "from": "G_COR_72",
+          "to": "D_GE401",
+          "distance": 21.077884219224735
+        },
+        {
+          "from": "G_COR_7",
+          "to": "D_GW507",
+          "distance": 23.73910619861286
+        },
+        {
+          "from": "G_COR_7",
+          "to": "D_GW510",
+          "distance": 30.97342147154264
+        },
+        {
+          "from": "G_COR_7",
+          "to": "D_GW509",
+          "distance": 32.737646717548664
+        },
+        {
+          "from": "G_COR_7",
+          "to": "D_GW502",
+          "distance": 57.28884222949036
+        },
+        {
+          "from": "G_COR_16",
+          "to": "D_GW607",
+          "distance": 38.36564636004748
+        },
+        {
+          "from": "G_COR_13",
+          "to": "G_COR_2",
+          "distance": 1.5607222649852717
+        },
+        {
+          "from": "G_COR_13",
+          "to": "G_COR_85",
+          "distance": 18.51599651537327
+        },
+        {
+          "from": "G_COR_22",
+          "to": "D_GWBATH",
+          "distance": 25.42525251689943
+        },
+        {
+          "from": "G_COR_21",
+          "to": "D_GPRAYW",
+          "distance": 38.3309424131564
+        },
+        {
+          "from": "G_COR_57",
+          "to": "D_GPRAYM",
+          "distance": 36.13588716805485
+        },
+        {
+          "from": "G_COR_5",
+          "to": "D_GBATHW",
+          "distance": 43.02419659675813
+        },
+        {
+          "from": "G_COR_85",
+          "to": "D_PRAYW",
+          "distance": 14.69586839895466
+        },
+        {
+          "from": "G_COR_6",
+          "to": "D_BATHMEN",
+          "distance": 27.8591685875616
+        },
+        {
+          "from": "G_COR_6",
+          "to": "D_PRAYHMEN",
+          "distance": 33.09785731472145
+        }
+      ],
+      "rooms": {
+        "GE107": {
+          "id": "GE107",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE107"
+        },
+        "GE109": {
+          "id": "GE109",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE109"
+        },
+        "GE111": {
+          "id": "GE111",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE111"
+        },
+        "GE113": {
+          "id": "GE113",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE113"
+        },
+        "GE114": {
+          "id": "GE114",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE114"
+        },
+        "GE118": {
+          "id": "GE118",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE118"
+        },
+        "GE119": {
+          "id": "GE119",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE119"
+        },
+        "GE127": {
+          "id": "GE127",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE127"
+        },
+        "GE129": {
+          "id": "GE129",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE129"
+        },
+        "GE130": {
+          "id": "GE130",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE130"
+        },
+        "GE133": {
+          "id": "GE133",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE133"
+        },
+        "GE135": {
+          "id": "GE135",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE135"
+        },
+        "GE136": {
+          "id": "GE136",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE136"
+        },
+        "GE201": {
+          "id": "GE201",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE201"
+        },
+        "GE203": {
+          "id": "GE203",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE203"
+        },
+        "GE204": {
+          "id": "GE204",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE204"
+        },
+        "GE205": {
+          "id": "GE205",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE205"
+        },
+        "GE206": {
+          "id": "GE206",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE206"
+        },
+        "GE208": {
+          "id": "GE208",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE208"
+        },
+        "GE211": {
+          "id": "GE211",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE211"
+        },
+        "GE212": {
+          "id": "GE212",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE212"
+        },
+        "GE214": {
+          "id": "GE214",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE214"
+        },
+        "GE216": {
+          "id": "GE216",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE216"
+        },
+        "GE301": {
+          "id": "GE301",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE301"
+        },
+        "GE303": {
+          "id": "GE303",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE303"
+        },
+        "GE304": {
+          "id": "GE304",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE304"
+        },
+        "GE305": {
+          "id": "GE305",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE305"
+        },
+        "GE306": {
+          "id": "GE306",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE306"
+        },
+        "GE308": {
+          "id": "GE308",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE308"
+        },
+        "GE311": {
+          "id": "GE311",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE311"
+        },
+        "GE312": {
+          "id": "GE312",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE312"
+        },
+        "GE314": {
+          "id": "GE314",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE314"
+        },
+        "GE315": {
+          "id": "GE315",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE315"
+        },
+        "GE316": {
+          "id": "GE316",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE316"
+        },
+        "GE318": {
+          "id": "GE318",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE318"
+        },
+        "GE322": {
+          "id": "GE322",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE322"
+        },
+        "GE401": {
+          "id": "GE401",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE401"
+        },
+        "GE403": {
+          "id": "GE403",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE403"
+        },
+        "GE404": {
+          "id": "GE404",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE404"
+        },
+        "GE405": {
+          "id": "GE405",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE405"
+        },
+        "GE406": {
+          "id": "GE406",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE406"
+        },
+        "GE408": {
+          "id": "GE408",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE408"
+        },
+        "GE411": {
+          "id": "GE411",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE411"
+        },
+        "GE412": {
+          "id": "GE412",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE412"
+        },
+        "GE414": {
+          "id": "GE414",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE414"
+        },
+        "GE416": {
+          "id": "GE416",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE416"
+        },
+        "GE418": {
+          "id": "GE418",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE418"
+        },
+        "GE420": {
+          "id": "GE420",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE420"
+        },
+        "GE501": {
+          "id": "GE501",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE501"
+        },
+        "GE503": {
+          "id": "GE503",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE503"
+        },
+        "GE504": {
+          "id": "GE504",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE504"
+        },
+        "GE505": {
+          "id": "GE505",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE505"
+        },
+        "GE506": {
+          "id": "GE506",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE506"
+        },
+        "GE508": {
+          "id": "GE508",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE508"
+        },
+        "GE511": {
+          "id": "GE511",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE511"
+        },
+        "GE512": {
+          "id": "GE512",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE512"
+        },
+        "GE514": {
+          "id": "GE514",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE514"
+        },
+        "GE516": {
+          "id": "GE516",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE516"
+        },
+        "GE518": {
+          "id": "GE518",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE518"
+        },
+        "GE520": {
+          "id": "GE520",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE520"
+        },
+        "GE601": {
+          "id": "GE601",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE601"
+        },
+        "GE603": {
+          "id": "GE603",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE603"
+        },
+        "GE604": {
+          "id": "GE604",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE604"
+        },
+        "GE605": {
+          "id": "GE605",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE605"
+        },
+        "GE606": {
+          "id": "GE606",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE606"
+        },
+        "GE608": {
+          "id": "GE608",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE608"
+        },
+        "GE611": {
+          "id": "GE611",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE611"
+        },
+        "GE612": {
+          "id": "GE612",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE612"
+        },
+        "GE614": {
+          "id": "GE614",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE614"
+        },
+        "GE616": {
+          "id": "GE616",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE616"
+        },
+        "GE618": {
+          "id": "GE618",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE618"
+        },
+        "GE620": {
+          "id": "GE620",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE620"
+        },
+        "GW106": {
+          "id": "GW106",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW106"
+        },
+        "GW108": {
+          "id": "GW108",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW108"
+        },
+        "GW110": {
+          "id": "GW110",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW110"
+        },
+        "GW112": {
+          "id": "GW112",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW112"
+        },
+        "GW115": {
+          "id": "GW115",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW115"
+        },
+        "GW116": {
+          "id": "GW116",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW116"
+        },
+        "GW117": {
+          "id": "GW117",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW117"
+        },
+        "GW120": {
+          "id": "GW120",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW120"
+        },
+        "GW128": {
+          "id": "GW128",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW128"
+        },
+        "GW131": {
+          "id": "GW131",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW131"
+        },
+        "GW132": {
+          "id": "GW132",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW132"
+        },
+        "GW134": {
+          "id": "GW134",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW134"
+        },
+        "GW202": {
+          "id": "GW202",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW202"
+        },
+        "GW207": {
+          "id": "GW207",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW207"
+        },
+        "GW209": {
+          "id": "GW209",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW209"
+        },
+        "GW210": {
+          "id": "GW210",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW210"
+        },
+        "GW213": {
+          "id": "GW213",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW213"
+        },
+        "GW215": {
+          "id": "GW215",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW215"
+        },
+        "GW217": {
+          "id": "GW217",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW217"
+        },
+        "GW218": {
+          "id": "GW218",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW218"
+        },
+        "GW219": {
+          "id": "GW219",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW219"
+        },
+        "GW302": {
+          "id": "GW302",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW302"
+        },
+        "GW307": {
+          "id": "GW307",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW307"
+        },
+        "GW309": {
+          "id": "GW309",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW309"
+        },
+        "GW310": {
+          "id": "GW310",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW310"
+        },
+        "GW313": {
+          "id": "GW313",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW313"
+        },
+        "GW317": {
+          "id": "GW317",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW317"
+        },
+        "GW319": {
+          "id": "GW319",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW319"
+        },
+        "GW320": {
+          "id": "GW320",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW320"
+        },
+        "GW321": {
+          "id": "GW321",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW321"
+        },
+        "GW402": {
+          "id": "GW402",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW402"
+        },
+        "GW407": {
+          "id": "GW407",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW407"
+        },
+        "GW409": {
+          "id": "GW409",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW409"
+        },
+        "GW410": {
+          "id": "GW410",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW410"
+        },
+        "GW413": {
+          "id": "GW413",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW413"
+        },
+        "GW415": {
+          "id": "GW415",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW415"
+        },
+        "GW417": {
+          "id": "GW417",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW417"
+        },
+        "GW419": {
+          "id": "GW419",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW419"
+        },
+        "GW502": {
+          "id": "GW502",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW502"
+        },
+        "GW507": {
+          "id": "GW507",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW507"
+        },
+        "GW509": {
+          "id": "GW509",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW509"
+        },
+        "GW510": {
+          "id": "GW510",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW510"
+        },
+        "GW513": {
+          "id": "GW513",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW513"
+        },
+        "GW515": {
+          "id": "GW515",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW515"
+        },
+        "GW517": {
+          "id": "GW517",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW517"
+        },
+        "GW519": {
+          "id": "GW519",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW519"
+        },
+        "GW602": {
+          "id": "GW602",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW602"
+        },
+        "GW607": {
+          "id": "GW607",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW607"
+        },
+        "GW609": {
+          "id": "GW609",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW609"
+        },
+        "GW610": {
+          "id": "GW610",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW610"
+        },
+        "GW613": {
+          "id": "GW613",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW613"
+        },
+        "GW615": {
+          "id": "GW615",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW615"
+        },
+        "GW617": {
+          "id": "GW617",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW617"
+        },
+        "GW619": {
+          "id": "GW619",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW619"
+        },
+        "GW103": {
+          "id": "GW103",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW103"
+        },
+        "GW104": {
+          "id": "GW104",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW104"
+        },
+        "GW105": {
+          "id": "GW105",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW105"
+        },
+        "GW113": {
+          "id": "GW113",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW113"
+        },
+        "GW109": {
+          "id": "GW109",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW109"
+        },
+        "GW_LIB_F": {
+          "id": "GW_LIB_F",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW_LIB_F"
+        },
+        "GE_LIB_M": {
+          "id": "GE_LIB_M",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE_LIB_M"
+        },
+        "GW_CAFE_F1": {
+          "id": "GW_CAFE_F1",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW_CAFE_F1"
+        },
+        "GW_CAFE_F2": {
+          "id": "GW_CAFE_F2",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW_CAFE_F2"
+        },
+        "GE_CAFE_M1": {
+          "id": "GE_CAFE_M1",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE_CAFE_M1"
+        },
+        "GE_CAFE_M2": {
+          "id": "GE_CAFE_M2",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE_CAFE_M2"
+        },
+        "GE103": {
+          "id": "GE103",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE103"
+        },
+        "GE104": {
+          "id": "GE104",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE104"
+        },
+        "GE106": {
+          "id": "GE106",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE106"
+        },
+        "GE112": {
+          "id": "GE112",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE112"
+        },
+        "GW114": {
+          "id": "GW114",
+          "floor": "G",
+          "wing": "W",
+          "doorId": "D_GW114"
+        },
+        "GE105": {
+          "id": "GE105",
+          "floor": "G",
+          "wing": "E",
+          "doorId": "D_GE105"
+        },
+        "GWBATH": {
+          "id": "GWBATH",
+          "floor": "G",
+          "type": "bathroom_female",
+          "codeOnPlan": "GWBATH",
+          "code": "GWBATH",
+          "label": "Bathroom (Women)",
+          "zone": "G_NORTH",
+          "doorId": "D_GWBATH",
+          "labelPoint": {
+            "x": 671.0442652797753,
+            "y": 397.6853856355847
+          }
+        },
+        "GPRAYW": {
+          "id": "GPRAYW",
+          "floor": "G",
+          "type": "prayer_female",
+          "codeOnPlan": "GPRAYW",
+          "code": "GPRAYW",
+          "label": "Prayer (Women)",
+          "zone": "G_NORTH",
+          "doorId": "D_GPRAYW",
+          "labelPoint": {
+            "x": 625.832729628635,
+            "y": 388.9711780319558
+          }
+        },
+        "GPRAYM": {
+          "id": "GPRAYM",
+          "floor": "G",
+          "type": "prayer_male",
+          "codeOnPlan": "GPRAYM",
+          "code": "GPRAYM",
+          "label": "Prayer (Men)",
+          "zone": "G_NORTH",
+          "doorId": "D_GPRAYM",
+          "labelPoint": {
+            "x": 607.9574969556952,
+            "y": 597.5712870483248
+          }
+        },
+        "GBATHW": {
+          "id": "GBATHW",
+          "floor": "G",
+          "type": "bathroom_female",
+          "codeOnPlan": "GBATHW",
+          "code": "GBATHW",
+          "label": "Bathroom (Women)",
+          "zone": "G_NORTH",
+          "doorId": "D_GBATHW",
+          "labelPoint": {
+            "x": 168.88781227820968,
+            "y": 407.87266218118367
+          }
+        },
+        "PRAYW": {
+          "id": "PRAYW",
+          "floor": "G",
+          "type": "prayer_female",
+          "codeOnPlan": "PRAYW",
+          "code": "PRAYW",
+          "label": "Prayer (Women)",
+          "zone": "G_NORTH",
+          "doorId": "D_PRAYW",
+          "labelPoint": {
+            "x": 125.00615031921186,
+            "y": 429.50721289561056
+          }
+        },
+        "BATHMEN": {
+          "id": "BATHMEN",
+          "floor": "G",
+          "type": "bathroom_male",
+          "codeOnPlan": "BATHMEN",
+          "code": "BATHMEN",
+          "label": "Bathroom (Men)",
+          "zone": "G_NORTH",
+          "doorId": "D_BATHMEN",
+          "labelPoint": {
+            "x": 118.1808540397399,
+            "y": 583.5300156998917
+          }
+        },
+        "PRAYHMEN": {
+          "id": "PRAYHMEN",
+          "floor": "G",
+          "type": "prayer_male",
+          "codeOnPlan": "PRAYHMEN",
+          "code": "PRAYHMEN",
+          "label": "Prayer (Men)",
+          "zone": "G_NORTH",
+          "doorId": "D_PRAYHMEN",
+          "labelPoint": {
+            "x": 138.08573027605416,
+            "y": 601.9974778168585
+          }
+        }
+      },
+      "doors": {
+        "D_GW112": {
+          "id": "D_GW112",
+          "roomId": "GW112",
+          "corridorNodeId": "G_COR_25",
+          "point": {
+            "x": 757.8286975816593,
+            "y": 402.7346067645693
+          }
+        },
+        "D_GW103": {
+          "id": "D_GW103",
+          "roomId": "GW103",
+          "corridorNodeId": "G_COR_19",
+          "point": {
+            "x": 607.1746949216316,
+            "y": 301.81085264342954
+          }
+        },
+        "D_GW104": {
+          "id": "D_GW104",
+          "roomId": "GW104",
+          "corridorNodeId": "G_COR_20",
+          "point": {
+            "x": 636.5036833316648,
+            "y": 330.8821451674321
+          }
+        },
+        "D_GW105": {
+          "id": "D_GW105",
+          "roomId": "GW105",
+          "corridorNodeId": "G_COR_20",
+          "point": {
+            "x": 598.9450551793059,
+            "y": 356.81346550777084
+          }
+        },
+        "D_GW113": {
+          "id": "D_GW113",
+          "roomId": "GW113",
+          "corridorNodeId": "G_COR_24",
+          "point": {
+            "x": 794.4014491615634,
+            "y": 429.0934432250953
+          }
+        },
+        "D_GW106": {
+          "id": "D_GW106",
+          "roomId": "GW106",
+          "corridorNodeId": "G_COR_22",
+          "point": {
+            "x": 714.7991054816559,
+            "y": 373.7282339766432
+          }
+        },
+        "D_GW108": {
+          "id": "D_GW108",
+          "roomId": "GW108",
+          "corridorNodeId": "G_COR_21",
+          "point": {
+            "x": 630.0445303642739,
+            "y": 390.4218323491243
+          }
+        },
+        "D_GE114": {
+          "id": "D_GE114",
+          "roomId": "GE114",
+          "corridorNodeId": "G_COR_28",
+          "point": {
+            "x": 843.5956940547991,
+            "y": 533.8414603670544
+          }
+        },
+        "D_GE113": {
+          "id": "D_GE113",
+          "roomId": "GE113",
+          "corridorNodeId": "G_COR_29",
+          "point": {
+            "x": 794.247305113687,
+            "y": 566.181092914209
+          }
+        },
+        "D_GE520": {
+          "id": "D_GE520",
+          "roomId": "GE520",
+          "corridorNodeId": "G_COR_45",
+          "point": {
+            "x": 500.23353313018436,
+            "y": 803.585499847687
+          }
+        },
+        "D_GW109": {
+          "id": "D_GW109",
+          "roomId": "GW109",
+          "corridorNodeId": "G_COR_21",
+          "point": {
+            "x": 678.9625088000766,
+            "y": 354.63318526214965
+          }
+        },
+        "D_GE109": {
+          "id": "D_GE109",
+          "roomId": "GE109",
+          "corridorNodeId": "G_COR_56",
+          "point": {
+            "x": 715.1094920964363,
+            "y": 623.1827715423233
+          }
+        },
+        "D_GW_LIB_F": {
+          "id": "D_GW_LIB_F",
+          "roomId": "GW_LIB_F",
+          "corridorNodeId": "G_COR_23",
+          "point": {
+            "x": 677.2773442114549,
+            "y": 429.55428647295315
+          }
+        },
+        "D_GE104": {
+          "id": "D_GE104",
+          "roomId": "GE104",
+          "corridorNodeId": "G_COR_58",
+          "point": {
+            "x": 645.932757839542,
+            "y": 674.3295026384019
+          }
+        },
+        "D_GE106": {
+          "id": "D_GE106",
+          "roomId": "GE106",
+          "corridorNodeId": "G_COR_57",
+          "point": {
+            "x": 679.8372986054352,
+            "y": 649.3860282044647
+          }
+        },
+        "D_GE112": {
+          "id": "D_GE112",
+          "roomId": "GE112",
+          "corridorNodeId": "G_COR_55",
+          "point": {
+            "x": 750.8035753245573,
+            "y": 591.9968063233995
+          }
+        },
+        "D_GW114": {
+          "id": "D_GW114",
+          "roomId": "GW114",
+          "corridorNodeId": "G_COR_26",
+          "point": {
+            "x": 843.2431027684559,
+            "y": 464.602034131641
+          }
+        },
+        "D_GE105": {
+          "id": "D_GE105",
+          "roomId": "GE105",
+          "corridorNodeId": "G_COR_86",
+          "point": {
+            "x": 608.7141161754508,
+            "y": 633.2393790917665
+          }
+        },
+        "D_GE107": {
+          "id": "D_GE107",
+          "roomId": "GE107",
+          "corridorNodeId": "G_COR_57",
+          "point": {
+            "x": 633.8418967755189,
+            "y": 615.1085916537656
+          }
+        },
+        "D_GE103": {
+          "id": "D_GE103",
+          "roomId": "GE103",
+          "corridorNodeId": "G_COR_59",
+          "point": {
+            "x": 606.0554197549636,
+            "y": 693.3448279106315
+          }
+        },
+        "D_GE518": {
+          "id": "D_GE518",
+          "roomId": "GE518",
+          "corridorNodeId": "G_COR_45",
+          "point": {
+            "x": 523.6453691208175,
+            "y": 764.4358387324202
+          }
+        },
+        "D_GE516": {
+          "id": "D_GE516",
+          "roomId": "GE516",
+          "corridorNodeId": "G_COR_45",
+          "point": {
+            "x": 535.8671895878527,
+            "y": 775.214145216842
+          }
+        },
+        "D_GE506": {
+          "id": "D_GE506",
+          "roomId": "GE506",
+          "corridorNodeId": "G_COR_68",
+          "point": {
+            "x": 378.3801630164066,
+            "y": 723.3865241683911
+          }
+        },
+        "D_GE508": {
+          "id": "D_GE508",
+          "roomId": "GE508",
+          "corridorNodeId": "G_COR_68",
+          "point": {
+            "x": 410.640112241771,
+            "y": 699.2546723620842
+          }
+        },
+        "D_GE_CAFE_M1": {
+          "id": "D_GE_CAFE_M1",
+          "roomId": "GE_CAFE_M1",
+          "corridorNodeId": "G_COR_72",
+          "point": {
+            "x": 412.7624996626349,
+            "y": 531.9000708854551
+          }
+        },
+        "D_GE_CAFE_M2": {
+          "id": "D_GE_CAFE_M2",
+          "roomId": "GE_CAFE_M2",
+          "corridorNodeId": "G_COR_84",
+          "point": {
+            "x": 408.1297663055923,
+            "y": 464.245773056327
+          }
+        },
+        "D_GW402": {
+          "id": "D_GW402",
+          "roomId": "GW402",
+          "corridorNodeId": "G_COR_83",
+          "point": {
+            "x": 321.624768882787,
+            "y": 433.86465005470046
+          }
+        },
+        "D_GE401": {
+          "id": "D_GE401",
+          "roomId": "GE401",
+          "corridorNodeId": "G_COR_72",
+          "point": {
+            "x": 359.61595575849657,
+            "y": 549.0847412032351
+          }
+        },
+        "D_GW507": {
+          "id": "D_GW507",
+          "roomId": "GW507",
+          "corridorNodeId": "G_COR_7",
+          "point": {
+            "x": 372.08944363920614,
+            "y": 271.53763135124996
+          }
+        },
+        "D_GW510": {
+          "id": "D_GW510",
+          "roomId": "GW510",
+          "corridorNodeId": "G_COR_7",
+          "point": {
+            "x": 359.8030764105862,
+            "y": 288.56362964219755
+          }
+        },
+        "D_GW509": {
+          "id": "D_GW509",
+          "roomId": "GW509",
+          "corridorNodeId": "G_COR_7",
+          "point": {
+            "x": 395.8982771040409,
+            "y": 318.6056086082519
+          }
+        },
+        "D_GW502": {
+          "id": "D_GW502",
+          "roomId": "GW502",
+          "corridorNodeId": "G_COR_7",
+          "point": {
+            "x": 439.6365483307489,
+            "y": 256.5104451900201
+          }
+        },
+        "D_GW607": {
+          "id": "D_GW607",
+          "roomId": "GW607",
+          "corridorNodeId": "G_COR_16",
+          "point": {
+            "x": 160.93957890686912,
+            "y": 180.38233755382808
+          }
+        },
+        "D_GWBATH": {
+          "id": "D_GWBATH",
+          "roomId": "GWBATH",
+          "corridorNodeId": "G_COR_22",
+          "point": {
+            "x": 667.8420827299021,
+            "y": 402.2314059023473
+          }
+        },
+        "D_GPRAYW": {
+          "id": "D_GPRAYW",
+          "roomId": "GPRAYW",
+          "corridorNodeId": "G_COR_21",
+          "point": {
+            "x": 621.7217477202176,
+            "y": 388.7821540610372
+          }
+        },
+        "D_GPRAYM": {
+          "id": "D_GPRAYM",
+          "roomId": "GPRAYM",
+          "corridorNodeId": "G_COR_57",
+          "point": {
+            "x": 631.2670948794347,
+            "y": 613.0845924547687
+          }
+        },
+        "D_GBATHW": {
+          "id": "D_GBATHW",
+          "roomId": "GBATHW",
+          "corridorNodeId": "G_COR_5",
+          "point": {
+            "x": 155.52414367677616,
+            "y": 411.8274449925295
+          }
+        },
+        "D_PRAYW": {
+          "id": "D_PRAYW",
+          "roomId": "PRAYW",
+          "corridorNodeId": "G_COR_85",
+          "point": {
+            "x": 130.47636967400473,
+            "y": 438.6023358952979
+          }
+        },
+        "D_BATHMEN": {
+          "id": "D_BATHMEN",
+          "roomId": "BATHMEN",
+          "corridorNodeId": "G_COR_6",
+          "point": {
+            "x": 138.05155681815287,
+            "y": 563.802999425453
+          }
+        },
+        "D_PRAYHMEN": {
+          "id": "D_PRAYHMEN",
+          "roomId": "PRAYHMEN",
+          "corridorNodeId": "G_COR_6",
+          "point": {
+            "x": 147.13063669542782,
+            "y": 575.4986161834831
+          }
+        }
+      }
+    },
+    "F": {
+      "nodes": {
+        "Elevator and Stairs W": {
+          "id": "Elevator and Stairs W",
+          "x": 513.3425101066491,
+          "y": 316.0296866714995,
+          "kind": "stairs"
+        },
+        "Elevator and Stairs M": {
+          "id": "Elevator and Stairs M",
+          "x": 518.3812619906788,
+          "y": 677.9913472076332,
+          "kind": "stairs"
+        },
+        "F_COR_1": {
+          "id": "F_COR_1",
+          "x": 533.68234675792,
+          "y": 296.9617994066821,
+          "kind": "corridor"
+        },
+        "F_COR_2": {
+          "id": "F_COR_2",
+          "x": 568.9154082598059,
+          "y": 321.481422844812,
+          "kind": "corridor"
+        },
+        "F_COR_3": {
+          "id": "F_COR_3",
+          "x": 604.667461289074,
+          "y": 340.71662059252526,
+          "kind": "corridor"
+        },
+        "F_COR_4": {
+          "id": "F_COR_4",
+          "x": 623.150525667593,
+          "y": 354.6296641840811,
+          "kind": "corridor"
+        },
+        "F_COR_5": {
+          "id": "F_COR_5",
+          "x": 657.9164992524813,
+          "y": 376.03866667504667,
+          "kind": "corridor"
+        },
+        "F_COR_6": {
+          "id": "F_COR_6",
+          "x": 699.292224037408,
+          "y": 402.5598736178189,
+          "kind": "corridor"
+        },
+        "F_COR_7": {
+          "id": "F_COR_7",
+          "x": 715.9807870794912,
+          "y": 411.12496145517565,
+          "kind": "corridor"
+        },
+        "F_COR_8": {
+          "id": "F_COR_8",
+          "x": 766.2013538254544,
+          "y": 445.12165788294595,
+          "kind": "corridor"
+        },
+        "F_COR_9": {
+          "id": "F_COR_9",
+          "x": 788.9546640346897,
+          "y": 461.82897351214723,
+          "kind": "corridor"
+        },
+        "F_COR_10": {
+          "id": "F_COR_10",
+          "x": 809.7506247827043,
+          "y": 475.9980631917589,
+          "kind": "corridor"
+        },
+        "F_STAIR_2": {
+          "id": "F_STAIR_2",
+          "x": 858.7115261741694,
+          "y": 519.3170258106643,
+          "kind": "stairs"
+        },
+        "F_COR_11": {
+          "id": "F_COR_11",
+          "x": 842.7328004635543,
+          "y": 496.82605829188816,
+          "kind": "corridor"
+        },
+        "F_COR_12": {
+          "id": "F_COR_12",
+          "x": 831.9751801549611,
+          "y": 505.9409801422733,
+          "kind": "corridor"
+        },
+        "F_STAIR_1": {
+          "id": "F_STAIR_1",
+          "x": 854.6246405338825,
+          "y": 475.4577622728071,
+          "kind": "stairs"
+        },
+        "F_COR_13": {
+          "id": "F_COR_13",
+          "x": 808.2399010384561,
+          "y": 522.4937245070113,
+          "kind": "corridor"
+        },
+        "F_COR_14": {
+          "id": "F_COR_14",
+          "x": 793.1534673077292,
+          "y": 534.8507606593394,
+          "kind": "corridor"
+        },
+        "F_COR_15": {
+          "id": "F_COR_15",
+          "x": 769.279567416739,
+          "y": 552.2303224879539,
+          "kind": "corridor"
+        },
+        "F_COR_16": {
+          "id": "F_COR_16",
+          "x": 716.5331451202007,
+          "y": 586.2750312526874,
+          "kind": "corridor"
+        },
+        "F_COR_17": {
+          "id": "F_COR_17",
+          "x": 665.1389869365076,
+          "y": 620.9781275636402,
+          "kind": "corridor"
+        },
+        "F_COR_18": {
+          "id": "F_COR_18",
+          "x": 622.0523993012005,
+          "y": 643.6745896172683,
+          "kind": "corridor"
+        },
+        "F_COR_19": {
+          "id": "F_COR_19",
+          "x": 608.4490664255677,
+          "y": 654.4729226269039,
+          "kind": "corridor"
+        },
+        "F_COR_20": {
+          "id": "F_COR_20",
+          "x": 572.6418552054567,
+          "y": 675.5968261225355,
+          "kind": "corridor"
+        },
+        "F_COR_21": {
+          "id": "F_COR_21",
+          "x": 540.8679012965863,
+          "y": 695.8855564654426,
+          "kind": "corridor"
+        },
+        "F_COR_22": {
+          "id": "F_COR_22",
+          "x": 527.9311680824107,
+          "y": 686.6422031475053,
+          "kind": "corridor"
+        },
+        "F_COR_24": {
+          "id": "F_COR_24",
+          "x": 504.46149590610077,
+          "y": 671.5739901888289,
+          "kind": "corridor"
+        },
+        "F_COR_25": {
+          "id": "F_COR_25",
+          "x": 452.4757632292732,
+          "y": 704.6393794698868,
+          "kind": "corridor"
+        },
+        "F_COR_23": {
+          "id": "F_COR_23",
+          "x": 828.5459896409392,
+          "y": 485.479685710278,
+          "kind": "corridor"
+        },
+        "F_COR_27": {
+          "id": "F_COR_27",
+          "x": 775.0086095107313,
+          "y": 473.5981819569962,
+          "kind": "corridor"
+        },
+        "F_COR_26": {
+          "id": "F_COR_26",
+          "x": 742.8593928335703,
+          "y": 491.17907104043366,
+          "kind": "corridor"
+        },
+        "F_COR_28": {
+          "id": "F_COR_28",
+          "x": 716.6433038876846,
+          "y": 495.2997963405029,
+          "kind": "corridor"
+        },
+        "F_COR_29": {
+          "id": "F_COR_29",
+          "x": 693.4491516484015,
+          "y": 510.6638638997755,
+          "kind": "corridor"
+        },
+        "F_COR_31": {
+          "id": "F_COR_31",
+          "x": 772.9756755410406,
+          "y": 514.0991232396977,
+          "kind": "corridor"
+        },
+        "F_COR_32": {
+          "id": "F_COR_32",
+          "x": 410.1076992539566,
+          "y": 733.3612564774817,
+          "kind": "corridor"
+        },
+        "F_COR_33": {
+          "id": "F_COR_33",
+          "x": 783.1266204169368,
+          "y": 521.1256733327003,
+          "kind": "corridor"
+        },
+        "F_COR_34": {
+          "id": "F_COR_34",
+          "x": 759.5637584592819,
+          "y": 539.4188671334882,
+          "kind": "corridor"
+        },
+        "F_COR_36": {
+          "id": "F_COR_36",
+          "x": 734.7017407703925,
+          "y": 553.8151304876008,
+          "kind": "corridor"
+        },
+        "F_COR_30": {
+          "id": "F_COR_30",
+          "x": 373.35703731732883,
+          "y": 709.387844445335,
+          "kind": "corridor"
+        }
+      },
+      "edges": [
+        {
+          "from": "F_COR_1",
+          "to": "F_COR_2",
+          "distance": 42.925290404880975
+        },
+        {
+          "from": "F_COR_2",
+          "to": "F_COR_3",
+          "distance": 40.598055719470544
+        },
+        {
+          "from": "F_COR_3",
+          "to": "F_COR_4",
+          "distance": 23.134313277056872
+        },
+        {
+          "from": "F_COR_4",
+          "to": "F_COR_5",
+          "distance": 40.82913551574811
+        },
+        {
+          "from": "F_COR_5",
+          "to": "F_COR_6",
+          "distance": 49.14595628512424
+        },
+        {
+          "from": "F_COR_6",
+          "to": "F_COR_7",
+          "distance": 18.758167982807404
+        },
+        {
+          "from": "F_COR_7",
+          "to": "F_COR_8",
+          "distance": 60.64553316022306
+        },
+        {
+          "from": "F_COR_8",
+          "to": "F_COR_9",
+          "distance": 28.228487756368498
+        },
+        {
+          "from": "F_COR_9",
+          "to": "F_COR_10",
+          "distance": 25.16416272761411
+        },
+        {
+          "from": "F_COR_10",
+          "to": "F_COR_11",
+          "distance": 39.00806701867527
+        },
+        {
+          "from": "F_COR_11",
+          "to": "F_COR_12",
+          "distance": 14.099935994269126
+        },
+        {
+          "from": "F_COR_12",
+          "to": "F_COR_13",
+          "distance": 28.93711839044731
+        },
+        {
+          "from": "F_COR_13",
+          "to": "F_COR_14",
+          "distance": 19.501200608720392
+        },
+        {
+          "from": "F_COR_14",
+          "to": "F_COR_15",
+          "distance": 29.529853798480897
+        },
+        {
+          "from": "F_COR_15",
+          "to": "F_COR_16",
+          "distance": 62.77919448320658
+        },
+        {
+          "from": "F_COR_16",
+          "to": "F_COR_17",
+          "distance": 62.01342103914065
+        },
+        {
+          "from": "F_COR_17",
+          "to": "F_COR_18",
+          "distance": 48.69890577627784
+        },
+        {
+          "from": "F_COR_18",
+          "to": "F_COR_19",
+          "distance": 17.368208344911597
+        },
+        {
+          "from": "F_COR_19",
+          "to": "F_COR_20",
+          "distance": 41.573737795084
+        },
+        {
+          "from": "F_COR_20",
+          "to": "F_COR_21",
+          "distance": 37.699028182835484
+        },
+        {
+          "from": "F_COR_21",
+          "to": "F_COR_22",
+          "distance": 15.899642977594699
+        },
+        {
+          "from": "F_COR_22",
+          "to": "Elevator and Stairs M",
+          "distance": 12.885573904693498
+        },
+        {
+          "from": "Elevator and Stairs M",
+          "to": "F_COR_24",
+          "distance": 15.327829557904339
+        },
+        {
+          "from": "F_COR_24",
+          "to": "F_COR_25",
+          "distance": 61.610359277109175
+        },
+        {
+          "from": "F_COR_10",
+          "to": "F_COR_23",
+          "distance": 21.05152977191581
+        },
+        {
+          "from": "F_COR_23",
+          "to": "F_COR_11",
+          "distance": 18.16606099509152
+        },
+        {
+          "from": "F_COR_27",
+          "to": "F_COR_9",
+          "distance": 18.24847128401515
+        },
+        {
+          "from": "F_COR_27",
+          "to": "F_COR_26",
+          "distance": 36.642322441668156
+        },
+        {
+          "from": "F_COR_26",
+          "to": "F_COR_28",
+          "distance": 26.537967077702433
+        },
+        {
+          "from": "F_COR_28",
+          "to": "F_COR_29",
+          "distance": 27.821273695949532
+        },
+        {
+          "from": "F_COR_26",
+          "to": "F_COR_31",
+          "distance": 37.84599419929757
+        },
+        {
+          "from": "F_COR_31",
+          "to": "F_COR_14",
+          "distance": 28.944321311375013
+        },
+        {
+          "from": "F_COR_31",
+          "to": "F_COR_33",
+          "distance": 12.345610073340191
+        },
+        {
+          "from": "F_COR_33",
+          "to": "F_COR_14",
+          "distance": 16.997519839531307
+        },
+        {
+          "from": "F_COR_33",
+          "to": "F_COR_34",
+          "distance": 29.83034366326823
+        },
+        {
+          "from": "F_COR_34",
+          "to": "F_COR_36",
+          "distance": 28.729293797857498
+        },
+        {
+          "from": "F_COR_32",
+          "to": "F_COR_25",
+          "distance": 51.18592642373419
+        },
+        {
+          "from": "F_COR_32",
+          "to": "F_COR_30",
+          "distance": 43.87864671162246
+        },
+        {
+          "from": "Elevator and Stairs W",
+          "to": "F_COR_1",
+          "distance": 27.879979909321456
+        },
+        {
+          "from": "F_STAIR_1",
+          "to": "F_COR_23",
+          "distance": 27.938056156120467
+        },
+        {
+          "from": "F_STAIR_2",
+          "to": "F_COR_12",
+          "distance": 29.895665173762538
+        },
+        {
+          "from": "F_COR_2",
+          "to": "D_FW102",
+          "distance": 27.195993635773984
+        },
+        {
+          "from": "F_COR_4",
+          "to": "D_FW104",
+          "distance": 32.00951835458217
+        },
+        {
+          "from": "F_COR_8",
+          "to": "D_FW112",
+          "distance": 26.884057047542512
+        },
+        {
+          "from": "F_COR_27",
+          "to": "D_FW202",
+          "distance": 53.93398955411978
+        },
+        {
+          "from": "F_COR_10",
+          "to": "D_FW114",
+          "distance": 34.27618726501244
+        },
+        {
+          "from": "F_COR_29",
+          "to": "D_FE205",
+          "distance": 39.55351185195461
+        },
+        {
+          "from": "F_COR_16",
+          "to": "D_FE111",
+          "distance": 28.774268614611362
+        },
+        {
+          "from": "F_COR_19",
+          "to": "D_FE103",
+          "distance": 16.303307339507406
+        },
+        {
+          "from": "F_COR_13",
+          "to": "D_FE114",
+          "distance": 30.093646183440498
+        },
+        {
+          "from": "F_COR_17",
+          "to": "D_FE108",
+          "distance": 18.909789308229854
+        },
+        {
+          "from": "F_COR_18",
+          "to": "D_FE104",
+          "distance": 37.546005030842146
+        },
+        {
+          "from": "F_COR_5",
+          "to": "D_FW105",
+          "distance": 30.215193106404698
+        },
+        {
+          "from": "F_COR_3",
+          "to": "D_FW103",
+          "distance": 34.22794959439835
+        },
+        {
+          "from": "F_COR_6",
+          "to": "D_FW201",
+          "distance": 28.042819841310028
+        },
+        {
+          "from": "F_COR_7",
+          "to": "D_FW109",
+          "distance": 27.062915831005675
+        },
+        {
+          "from": "F_COR_5",
+          "to": "D_FW107",
+          "distance": 41.37779602592463
+        },
+        {
+          "from": "F_COR_5",
+          "to": "D_FW108",
+          "distance": 40.20274703448139
+        },
+        {
+          "from": "F_COR_36",
+          "to": "D_FE202",
+          "distance": 37.55352879211449
+        },
+        {
+          "from": "F_COR_16",
+          "to": "D_FE201",
+          "distance": 25.770205600244406
+        },
+        {
+          "from": "F_COR_15",
+          "to": "D_FE112",
+          "distance": 28.46723078957185
+        },
+        {
+          "from": "F_COR_20",
+          "to": "D_FE102",
+          "distance": 23.834206982811228
+        },
+        {
+          "from": "F_COR_17",
+          "to": "D_F_MEN_BATH",
+          "distance": 21.498294543239883
+        },
+        {
+          "from": "F_COR_18",
+          "to": "D_F_MEN_PRAY",
+          "distance": 16.177019307552982
+        }
+      ],
+      "rooms": {
+        "FE101": {
+          "id": "FE101",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE101"
+        },
+        "FE103": {
+          "id": "FE103",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE103"
+        },
+        "FE105": {
+          "id": "FE105",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE105"
+        },
+        "FE107": {
+          "id": "FE107",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE107"
+        },
+        "FE109": {
+          "id": "FE109",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE109"
+        },
+        "FE111": {
+          "id": "FE111",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE111"
+        },
+        "FE113": {
+          "id": "FE113",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE113"
+        },
+        "FE115": {
+          "id": "FE115",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE115"
+        },
+        "FE117": {
+          "id": "FE117",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE117"
+        },
+        "FE119": {
+          "id": "FE119",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE119"
+        },
+        "FE201": {
+          "id": "FE201",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE201"
+        },
+        "FE203": {
+          "id": "FE203",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE203"
+        },
+        "FE205": {
+          "id": "FE205",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE205"
+        },
+        "FE207": {
+          "id": "FE207",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE207"
+        },
+        "FE209": {
+          "id": "FE209",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE209"
+        },
+        "FE211": {
+          "id": "FE211",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE211"
+        },
+        "FE213": {
+          "id": "FE213",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE213"
+        },
+        "FE215": {
+          "id": "FE215",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE215"
+        },
+        "FE217": {
+          "id": "FE217",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE217"
+        },
+        "FE219": {
+          "id": "FE219",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE219"
+        },
+        "FE301": {
+          "id": "FE301",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE301"
+        },
+        "FE303": {
+          "id": "FE303",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE303"
+        },
+        "FE305": {
+          "id": "FE305",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE305"
+        },
+        "FE307": {
+          "id": "FE307",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE307"
+        },
+        "FE309": {
+          "id": "FE309",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE309"
+        },
+        "FE311": {
+          "id": "FE311",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE311"
+        },
+        "FE313": {
+          "id": "FE313",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE313"
+        },
+        "FE315": {
+          "id": "FE315",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE315"
+        },
+        "FE317": {
+          "id": "FE317",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE317"
+        },
+        "FE319": {
+          "id": "FE319",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE319"
+        },
+        "FE401": {
+          "id": "FE401",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE401"
+        },
+        "FE403": {
+          "id": "FE403",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE403"
+        },
+        "FE405": {
+          "id": "FE405",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE405"
+        },
+        "FE407": {
+          "id": "FE407",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE407"
+        },
+        "FE409": {
+          "id": "FE409",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE409"
+        },
+        "FE411": {
+          "id": "FE411",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE411"
+        },
+        "FE413": {
+          "id": "FE413",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE413"
+        },
+        "FE415": {
+          "id": "FE415",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE415"
+        },
+        "FE417": {
+          "id": "FE417",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE417"
+        },
+        "FE419": {
+          "id": "FE419",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE419"
+        },
+        "FE501": {
+          "id": "FE501",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE501"
+        },
+        "FE503": {
+          "id": "FE503",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE503"
+        },
+        "FE505": {
+          "id": "FE505",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE505"
+        },
+        "FE507": {
+          "id": "FE507",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE507"
+        },
+        "FE509": {
+          "id": "FE509",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE509"
+        },
+        "FE511": {
+          "id": "FE511",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE511"
+        },
+        "FE513": {
+          "id": "FE513",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE513"
+        },
+        "FE515": {
+          "id": "FE515",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE515"
+        },
+        "FE517": {
+          "id": "FE517",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE517"
+        },
+        "FE519": {
+          "id": "FE519",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE519"
+        },
+        "FE601": {
+          "id": "FE601",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE601"
+        },
+        "FE603": {
+          "id": "FE603",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE603"
+        },
+        "FE605": {
+          "id": "FE605",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE605"
+        },
+        "FE607": {
+          "id": "FE607",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE607"
+        },
+        "FE609": {
+          "id": "FE609",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE609"
+        },
+        "FE611": {
+          "id": "FE611",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE611"
+        },
+        "FE613": {
+          "id": "FE613",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE613"
+        },
+        "FE615": {
+          "id": "FE615",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE615"
+        },
+        "FE617": {
+          "id": "FE617",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE617"
+        },
+        "FE619": {
+          "id": "FE619",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE619"
+        },
+        "FW102": {
+          "id": "FW102",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW102"
+        },
+        "FW104": {
+          "id": "FW104",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW104"
+        },
+        "FW106": {
+          "id": "FW106",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW106"
+        },
+        "FW107": {
+          "id": "FW107",
+          "type": "prayer_female",
+          "floor": "F",
+          "wing": "W",
+          "labelPoint": {
+            "x": 600.7213856352463,
+            "y": 383.02312055919595
+          },
+          "doorId": "D_FW107"
+        },
+        "FW108": {
+          "id": "FW108",
+          "type": "bathroom_female",
+          "floor": "F",
+          "wing": "W",
+          "labelPoint": {
+            "x": 627.1677138897871,
+            "y": 396.0881330966238
+          },
+          "doorId": "D_FW108"
+        },
+        "FW110": {
+          "id": "FW110",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW110"
+        },
+        "FW112": {
+          "id": "FW112",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW112"
+        },
+        "FW114": {
+          "id": "FW114",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW114"
+        },
+        "FW116": {
+          "id": "FW116",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW116"
+        },
+        "FW118": {
+          "id": "FW118",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW118"
+        },
+        "FW120": {
+          "id": "FW120",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW120"
+        },
+        "FW202": {
+          "id": "FW202",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW202"
+        },
+        "FW204": {
+          "id": "FW204",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW204"
+        },
+        "FW206": {
+          "id": "FW206",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW206"
+        },
+        "FW208": {
+          "id": "FW208",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW208"
+        },
+        "FW210": {
+          "id": "FW210",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW210"
+        },
+        "FW212": {
+          "id": "FW212",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW212"
+        },
+        "FW214": {
+          "id": "FW214",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW214"
+        },
+        "FW216": {
+          "id": "FW216",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW216"
+        },
+        "FW218": {
+          "id": "FW218",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW218"
+        },
+        "FW220": {
+          "id": "FW220",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW220"
+        },
+        "FW302": {
+          "id": "FW302",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW302"
+        },
+        "FW304": {
+          "id": "FW304",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW304"
+        },
+        "FW306": {
+          "id": "FW306",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW306"
+        },
+        "FW308": {
+          "id": "FW308",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW308"
+        },
+        "FW310": {
+          "id": "FW310",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW310"
+        },
+        "FW312": {
+          "id": "FW312",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW312"
+        },
+        "FW314": {
+          "id": "FW314",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW314"
+        },
+        "FW316": {
+          "id": "FW316",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW316"
+        },
+        "FW318": {
+          "id": "FW318",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW318"
+        },
+        "FW320": {
+          "id": "FW320",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW320"
+        },
+        "FW402": {
+          "id": "FW402",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW402"
+        },
+        "FW404": {
+          "id": "FW404",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW404"
+        },
+        "FW406": {
+          "id": "FW406",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW406"
+        },
+        "FW408": {
+          "id": "FW408",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW408"
+        },
+        "FW410": {
+          "id": "FW410",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW410"
+        },
+        "FW412": {
+          "id": "FW412",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW412"
+        },
+        "FW414": {
+          "id": "FW414",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW414"
+        },
+        "FW416": {
+          "id": "FW416",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW416"
+        },
+        "FW418": {
+          "id": "FW418",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW418"
+        },
+        "FW420": {
+          "id": "FW420",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW420"
+        },
+        "FW502": {
+          "id": "FW502",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW502"
+        },
+        "FW504": {
+          "id": "FW504",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW504"
+        },
+        "FW506": {
+          "id": "FW506",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW506"
+        },
+        "FW508": {
+          "id": "FW508",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW508"
+        },
+        "FW510": {
+          "id": "FW510",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW510"
+        },
+        "FW512": {
+          "id": "FW512",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW512"
+        },
+        "FW514": {
+          "id": "FW514",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW514"
+        },
+        "FW516": {
+          "id": "FW516",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW516"
+        },
+        "FW518": {
+          "id": "FW518",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW518"
+        },
+        "FW520": {
+          "id": "FW520",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW520"
+        },
+        "FW602": {
+          "id": "FW602",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW602"
+        },
+        "FW604": {
+          "id": "FW604",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW604"
+        },
+        "FW606": {
+          "id": "FW606",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW606"
+        },
+        "FW608": {
+          "id": "FW608",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW608"
+        },
+        "FW610": {
+          "id": "FW610",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW610"
+        },
+        "FW612": {
+          "id": "FW612",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW612"
+        },
+        "FW614": {
+          "id": "FW614",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW614"
+        },
+        "FW616": {
+          "id": "FW616",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW616"
+        },
+        "FW618": {
+          "id": "FW618",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW618"
+        },
+        "FW620": {
+          "id": "FW620",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW620"
+        },
+        "FW652": {
+          "id": "FW652",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW652"
+        },
+        "FE202": {
+          "id": "FE202",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE202"
+        },
+        "FE214": {
+          "id": "FE214",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE214"
+        },
+        "FE114": {
+          "id": "FE114",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE114"
+        },
+        "FE108": {
+          "id": "FE108",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE108"
+        },
+        "FE104": {
+          "id": "FE104",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE104"
+        },
+        "FW103": {
+          "id": "FW103",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW103"
+        },
+        "FW105": {
+          "id": "FW105",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW105"
+        },
+        "FW109": {
+          "id": "FW109",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW109"
+        },
+        "FW201": {
+          "id": "FW201",
+          "floor": "F",
+          "wing": "W",
+          "doorId": "D_FW201"
+        },
+        "FE102": {
+          "id": "FE102",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE102"
+        },
+        "F_MEN_BATH": {
+          "id": "F_MEN_BATH",
+          "type": "bathroom_male",
+          "floor": "F",
+          "wing": "E",
+          "labelPoint": {
+            "x": 648,
+            "y": 608
+          },
+          "doorId": "D_F_MEN_BATH"
+        },
+        "F_MEN_PRAY": {
+          "id": "F_MEN_PRAY",
+          "type": "prayer_male",
+          "floor": "F",
+          "wing": "E",
+          "labelPoint": {
+            "x": 612,
+            "y": 631
+          },
+          "doorId": "D_F_MEN_PRAY"
+        },
+        "FE112": {
+          "id": "FE112",
+          "floor": "F",
+          "wing": "E",
+          "doorId": "D_FE112"
+        }
+      },
+      "doors": {
+        "D_FW102": {
+          "id": "D_FW102",
+          "roomId": "FW102",
+          "corridorNodeId": "F_COR_2",
+          "point": {
+            "x": 591.2433605559364,
+            "y": 305.95452308668973
+          }
+        },
+        "D_FW104": {
+          "id": "D_FW104",
+          "roomId": "FW104",
+          "corridorNodeId": "F_COR_4",
+          "point": {
+            "x": 594.2011654420271,
+            "y": 368.2877682920002
+          }
+        },
+        "D_FW112": {
+          "id": "D_FW112",
+          "roomId": "FW112",
+          "corridorNodeId": "F_COR_8",
+          "point": {
+            "x": 788.84959818216,
+            "y": 430.6368537456967
+          }
+        },
+        "D_FW114": {
+          "id": "D_FW114",
+          "roomId": "FW114",
+          "corridorNodeId": "F_COR_10",
+          "point": {
+            "x": 838.4605794801971,
+            "y": 457.2738672225293
+          }
+        },
+        "D_FW202": {
+          "id": "D_FW202",
+          "roomId": "FW202",
+          "corridorNodeId": "F_COR_27",
+          "point": {
+            "x": 727.351887376324,
+            "y": 448.3452204548713
+          }
+        },
+        "D_FE205": {
+          "id": "D_FE205",
+          "roomId": "FE205",
+          "corridorNodeId": "F_COR_29",
+          "point": {
+            "x": 658.3175995571625,
+            "y": 528.8367653600066
+          }
+        },
+        "D_FE111": {
+          "id": "D_FE111",
+          "roomId": "FE111",
+          "corridorNodeId": "F_COR_16",
+          "point": {
+            "x": 739.4188554049484,
+            "y": 603.7164417194015
+          }
+        },
+        "D_FE103": {
+          "id": "D_FE103",
+          "roomId": "FE103",
+          "corridorNodeId": "F_COR_19",
+          "point": {
+            "x": 622.5683385470991,
+            "y": 662.6242406163203
+          }
+        },
+        "D_FE114": {
+          "id": "D_FE114",
+          "roomId": "FE114",
+          "corridorNodeId": "F_COR_13",
+          "point": {
+            "x": 833.8130617529507,
+            "y": 538.356920644131
+          }
+        },
+        "D_FE108": {
+          "id": "D_FE108",
+          "roomId": "FE108",
+          "corridorNodeId": "F_COR_17",
+          "point": {
+            "x": 680.6661069569826,
+            "y": 631.7711195284019
+          }
+        },
+        "D_FE104": {
+          "id": "D_FE104",
+          "roomId": "FE104",
+          "corridorNodeId": "F_COR_18",
+          "point": {
+            "x": 590.831155617068,
+            "y": 622.8194598743959
+          }
+        },
+        "D_FW105": {
+          "id": "D_FW105",
+          "roomId": "FW105",
+          "corridorNodeId": "F_COR_5",
+          "point": {
+            "x": 683.726563654313,
+            "y": 360.32884586032617
+          }
+        },
+        "D_FW103": {
+          "id": "D_FW103",
+          "roomId": "FW103",
+          "corridorNodeId": "F_COR_3",
+          "point": {
+            "x": 632.5124096480648,
+            "y": 320.8115613280616
+          }
+        },
+        "D_FW201": {
+          "id": "D_FW201",
+          "roomId": "FW201",
+          "corridorNodeId": "F_COR_6",
+          "point": {
+            "x": 676.3281643466048,
+            "y": 418.65495694066624
+          }
+        },
+        "D_FW109": {
+          "id": "D_FW109",
+          "roomId": "FW109",
+          "corridorNodeId": "F_COR_7",
+          "point": {
+            "x": 737.5500749907146,
+            "y": 394.77971039320516
+          }
+        },
+        "D_FW108": {
+          "id": "D_FW108",
+          "roomId": "FW108",
+          "corridorNodeId": "F_COR_5",
+          "point": {
+            "x": 619.5350264046423,
+            "y": 388.00208638469053
+          }
+        },
+        "D_FW107": {
+          "id": "D_FW107",
+          "roomId": "FW107",
+          "corridorNodeId": "F_COR_5",
+          "point": {
+            "x": 622.9609279229581,
+            "y": 398.1798056924875
+          }
+        },
+        "D_FE202": {
+          "id": "D_FE202",
+          "roomId": "FE202",
+          "corridorNodeId": "F_COR_36",
+          "point": {
+            "x": 702.7027218305423,
+            "y": 534.1598433712221
+          }
+        },
+        "D_FE201": {
+          "id": "D_FE201",
+          "roomId": "FE201",
+          "corridorNodeId": "F_COR_16",
+          "point": {
+            "x": 694.5712625418082,
+            "y": 572.7924791837441
+          }
+        },
+        "D_FE112": {
+          "id": "D_FE112",
+          "roomId": "FE112",
+          "corridorNodeId": "F_COR_15",
+          "point": {
+            "x": 793.36545448934,
+            "y": 567.404421233931
+          }
+        },
+        "D_FE102": {
+          "id": "D_FE102",
+          "roomId": "FE102",
+          "corridorNodeId": "F_COR_20",
+          "point": {
+            "x": 592.1088885392912,
+            "y": 689.3483364279116
+          }
+        },
+        "D_F_MEN_BATH": {
+          "id": "D_F_MEN_BATH",
+          "roomId": "F_MEN_BATH",
+          "corridorNodeId": "F_COR_17",
+          "point": {
+            "x": 648,
+            "y": 608
+          }
+        },
+        "D_F_MEN_PRAY": {
+          "id": "D_F_MEN_PRAY",
+          "roomId": "F_MEN_PRAY",
+          "corridorNodeId": "F_COR_18",
+          "point": {
+            "x": 612,
+            "y": 631
+          }
+        }
+      }
+    }
+  },
+  "interFloorLinks": [
+    {
+      "from": "G_COR_17",
+      "to": "Elevator and Stairs W",
+      "kind": "stairs",
+      "cost": 25
+    },
+    {
+      "from": "G_COR_61",
+      "to": "Elevator and Stairs M",
+      "kind": "stairs",
+      "cost": 25
+    }
+  ]
+}
+
