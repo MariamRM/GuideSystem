@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-04-15T19:27:21.850176+00:00",
+  "sources": [
+    "d:/Drawing for ythe project/map project - done.svg",
+    "smart_guide/assets/maps/GroundFloor.png",
+    "smart_guide/assets/maps/BranchFF1.png"
+  ],
+  "notes": [
+    "These labels were extracted from named sign groups in the source drawing.",
+    "They are reliable as place-type labels, but they do not give exact room-code mapping by themselves.",
+    "Use suggestedType when filling room type values in your data files."
+  ],
+  "labels": [
+    {
+      "sourceId": "ai_lab",
+      "en": "AI Lab",
+      "ar": "\u0645\u062e\u062a\u0628\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+      "suggestedType": "ai_lab",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "library_sign",
+      "en": "Library",
+      "ar": "\u0627\u0644\u0645\u0643\u062a\u0628\u0629",
+      "suggestedType": "library",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "health_sign",
+      "en": "Health Services",
+      "ar": "\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0635\u062d\u064a\u0629",
+      "suggestedType": "health_services",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "staionery_sign",
+      "en": "Stationery",
+      "ar": "\u0627\u0644\u0642\u0631\u0637\u0627\u0633\u064a\u0629",
+      "suggestedType": "stationery",
+      "source": "map project - done.svg",
+      "note": "Source drawing id is spelled staionery_sign."
+    },
+    {
+      "sourceId": "counter_sign",
+      "en": "Service Counter",
+      "ar": "\u0643\u0627\u0648\u0646\u062a\u0631 \u0627\u0644\u062e\u062f\u0645\u0629",
+      "suggestedType": "counter",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "cafeteria",
+      "en": "Cafeteria",
+      "ar": "\u0627\u0644\u0643\u0627\u0641\u064a\u062a\u064a\u0631\u064a\u0627",
+      "suggestedType": "cafeteria",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "bathroom_-_meeting_room",
+      "en": "Bathroom",
+      "ar": "\u062f\u0648\u0631\u0629 \u0645\u064a\u0627\u0647",
+      "suggestedType": "bathroom",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "bathroom_-_outside",
+      "en": "Bathroom",
+      "ar": "\u062f\u0648\u0631\u0629 \u0645\u064a\u0627\u0647",
+      "suggestedType": "bathroom",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "bathroom_-_reception",
+      "en": "Bathroom",
+      "ar": "\u062f\u0648\u0631\u0629 \u0645\u064a\u0627\u0647",
+      "suggestedType": "bathroom",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "prayer_room",
+      "en": "Prayer Room",
+      "ar": "\u0645\u0635\u0644\u0649",
+      "suggestedType": "prayer_room",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "prayer_room_-_reception",
+      "en": "Prayer Room",
+      "ar": "\u0645\u0635\u0644\u0649",
+      "suggestedType": "prayer_room",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "elevator",
+      "en": "Elevator",
+      "ar": "\u0645\u0635\u0639\u062f",
+      "suggestedType": "service",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "stairs",
+      "en": "Stairs",
+      "ar": "\u062f\u0631\u062c",
+      "suggestedType": "service",
+      "source": "map project - done.svg"
+    }
+  ]
+}

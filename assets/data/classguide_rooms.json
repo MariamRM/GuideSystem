@@ -1,0 +1,2102 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-03-01T12:13:32Z",
+  "normalization": {
+    "example": "GE 201 -> GE201",
+    "rules": [
+      "Uppercase",
+      "Remove spaces and hyphens",
+      "Pad room number to 3 digits when prefix is GE/GW/FE/FW/G/F (e.g., GE 98 -> GE098)"
+    ]
+  },
+  "rooms": [
+    {
+      "codeOnPlan": "GE103",
+      "code": "GE103",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE103"
+    },
+    {
+      "codeOnPlan": "GE104",
+      "code": "GE104",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE104"
+    },
+    {
+      "codeOnPlan": "GE106",
+      "code": "GE106",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE106"
+    },
+    {
+      "codeOnPlan": "GE105",
+      "code": "GE105",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE105"
+    },
+    {
+      "codeOnPlan": "GE112",
+      "code": "GE112",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE112"
+    },
+    {
+      "codeOnPlan": "GE107",
+      "code": "GE107",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE107"
+    },
+    {
+      "codeOnPlan": "GE109",
+      "code": "GE109",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE109"
+    },
+    {
+      "codeOnPlan": "GE111",
+      "code": "GE111",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE111"
+    },
+    {
+      "codeOnPlan": "GE113",
+      "code": "GE113",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE113"
+    },
+    {
+      "codeOnPlan": "GE114",
+      "code": "GE114",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE114"
+    },
+    {
+      "codeOnPlan": "GE118",
+      "code": "GE118",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE118"
+    },
+    {
+      "codeOnPlan": "GE119",
+      "code": "GE119",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE119"
+    },
+    {
+      "codeOnPlan": "GE127",
+      "code": "GE127",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE127"
+    },
+    {
+      "codeOnPlan": "GE129",
+      "code": "GE129",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE129"
+    },
+    {
+      "codeOnPlan": "GE130",
+      "code": "GE130",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE130"
+    },
+    {
+      "codeOnPlan": "GE133",
+      "code": "GE133",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE133"
+    },
+    {
+      "codeOnPlan": "GE135",
+      "code": "GE135",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE135"
+    },
+    {
+      "codeOnPlan": "GE136",
+      "code": "GE136",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE136"
+    },
+    {
+      "codeOnPlan": "GE201",
+      "code": "GE201",
+      "floor": "G",
+      "wing": "GE",
+      "type": "library",
+      "doorId": "D_GE201"
+    },
+    {
+      "codeOnPlan": "GE203",
+      "code": "GE203",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE203"
+    },
+    {
+      "codeOnPlan": "GE204",
+      "code": "GE204",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE204"
+    },
+    {
+      "codeOnPlan": "GE205",
+      "code": "GE205",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE205"
+    },
+    {
+      "codeOnPlan": "GE206",
+      "code": "GE206",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE206"
+    },
+    {
+      "codeOnPlan": "GE208",
+      "code": "GE208",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE208"
+    },
+    {
+      "codeOnPlan": "GE211",
+      "code": "GE211",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE211"
+    },
+    {
+      "codeOnPlan": "GE212",
+      "code": "GE212",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE212"
+    },
+    {
+      "codeOnPlan": "GE214",
+      "code": "GE214",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE214"
+    },
+    {
+      "codeOnPlan": "GE216",
+      "code": "GE216",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE216"
+    },
+    {
+      "codeOnPlan": "GE301",
+      "code": "GE301",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE301"
+    },
+    {
+      "codeOnPlan": "GE303",
+      "code": "GE303",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE303"
+    },
+    {
+      "codeOnPlan": "GE304",
+      "code": "GE304",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE304"
+    },
+    {
+      "codeOnPlan": "GE305",
+      "code": "GE305",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE305"
+    },
+    {
+      "codeOnPlan": "GE306",
+      "code": "GE306",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE306"
+    },
+    {
+      "codeOnPlan": "GE308",
+      "code": "GE308",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE308"
+    },
+    {
+      "codeOnPlan": "GE311",
+      "code": "GE311",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE311"
+    },
+    {
+      "codeOnPlan": "GE312",
+      "code": "GE312",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE312"
+    },
+    {
+      "codeOnPlan": "GE314",
+      "code": "GE314",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE314"
+    },
+    {
+      "codeOnPlan": "GE315",
+      "code": "GE315",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE315"
+    },
+    {
+      "codeOnPlan": "GE316",
+      "code": "GE316",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE316"
+    },
+    {
+      "codeOnPlan": "GE318",
+      "code": "GE318",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE318"
+    },
+    {
+      "codeOnPlan": "GE322",
+      "code": "GE322",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE322"
+    },
+    {
+      "codeOnPlan": "GE401",
+      "code": "GE401",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE401"
+    },
+    {
+      "codeOnPlan": "GE403",
+      "code": "GE403",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE403"
+    },
+    {
+      "codeOnPlan": "GE404",
+      "code": "GE404",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE404"
+    },
+    {
+      "codeOnPlan": "GE405",
+      "code": "GE405",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE405"
+    },
+    {
+      "codeOnPlan": "GE406",
+      "code": "GE406",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE406"
+    },
+    {
+      "codeOnPlan": "GE408",
+      "code": "GE408",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE408"
+    },
+    {
+      "codeOnPlan": "GE411",
+      "code": "GE411",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE411"
+    },
+    {
+      "codeOnPlan": "GE412",
+      "code": "GE412",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE412"
+    },
+    {
+      "codeOnPlan": "GE414",
+      "code": "GE414",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE414"
+    },
+    {
+      "codeOnPlan": "GE416",
+      "code": "GE416",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE416"
+    },
+    {
+      "codeOnPlan": "GE418",
+      "code": "GE418",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE418"
+    },
+    {
+      "codeOnPlan": "GE420",
+      "code": "GE420",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE420"
+    },
+    {
+      "codeOnPlan": "GE501",
+      "code": "GE501",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE501"
+    },
+    {
+      "codeOnPlan": "GE503",
+      "code": "GE503",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE503"
+    },
+    {
+      "codeOnPlan": "GE504",
+      "code": "GE504",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE504"
+    },
+    {
+      "codeOnPlan": "GE505",
+      "code": "GE505",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE505"
+    },
+    {
+      "codeOnPlan": "GE506",
+      "code": "GE506",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE506"
+    },
+    {
+      "codeOnPlan": "GE508",
+      "code": "GE508",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE508"
+    },
+    {
+      "codeOnPlan": "GE511",
+      "code": "GE511",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE511"
+    },
+    {
+      "codeOnPlan": "GE512",
+      "code": "GE512",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE512"
+    },
+    {
+      "codeOnPlan": "GE514",
+      "code": "GE514",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE514"
+    },
+    {
+      "codeOnPlan": "GE516",
+      "code": "GE516",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE516"
+    },
+    {
+      "codeOnPlan": "GE518",
+      "code": "GE518",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE518"
+    },
+    {
+      "codeOnPlan": "GE520",
+      "code": "GE520",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE520"
+    },
+    {
+      "codeOnPlan": "GE601",
+      "code": "GE601",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE601"
+    },
+    {
+      "codeOnPlan": "GE603",
+      "code": "GE603",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE603"
+    },
+    {
+      "codeOnPlan": "GE604",
+      "code": "GE604",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE604"
+    },
+    {
+      "codeOnPlan": "GE605",
+      "code": "GE605",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE605"
+    },
+    {
+      "codeOnPlan": "GE606",
+      "code": "GE606",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE606"
+    },
+    {
+      "codeOnPlan": "GE608",
+      "code": "GE608",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE608"
+    },
+    {
+      "codeOnPlan": "GE611",
+      "code": "GE611",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE611"
+    },
+    {
+      "codeOnPlan": "GE612",
+      "code": "GE612",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE612"
+    },
+    {
+      "codeOnPlan": "GE614",
+      "code": "GE614",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE614"
+    },
+    {
+      "codeOnPlan": "GE616",
+      "code": "GE616",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE616"
+    },
+    {
+      "codeOnPlan": "GE618",
+      "code": "GE618",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE618"
+    },
+    {
+      "codeOnPlan": "GE620",
+      "code": "GE620",
+      "floor": "G",
+      "wing": "GE",
+      "type": "unknown",
+      "doorId": "D_GE620"
+    },
+    {
+      "codeOnPlan": "GW106",
+      "code": "GW106",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW106"
+    },
+    {
+      "codeOnPlan": "GW108",
+      "code": "GW108",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW108"
+    },
+    {
+      "codeOnPlan": "GW110",
+      "code": "GW110",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW110"
+    },
+    {
+      "codeOnPlan": "GW112",
+      "code": "GW112",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW112"
+    },
+    {
+      "codeOnPlan": "GW114",
+      "code": "GW114",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW114"
+    },
+    {
+      "codeOnPlan": "GW115",
+      "code": "GW115",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW115"
+    },
+    {
+      "codeOnPlan": "GW116",
+      "code": "GW116",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW116"
+    },
+    {
+      "codeOnPlan": "GW117",
+      "code": "GW117",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW117"
+    },
+    {
+      "codeOnPlan": "GW120",
+      "code": "GW120",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW120"
+    },
+    {
+      "codeOnPlan": "GW128",
+      "code": "GW128",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW128"
+    },
+    {
+      "codeOnPlan": "GW131",
+      "code": "GW131",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW131"
+    },
+    {
+      "codeOnPlan": "GW132",
+      "code": "GW132",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW132"
+    },
+    {
+      "codeOnPlan": "GW134",
+      "code": "GW134",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW134"
+    },
+    {
+      "codeOnPlan": "GW202",
+      "code": "GW202",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW202"
+    },
+    {
+      "codeOnPlan": "GW207",
+      "code": "GW207",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW207"
+    },
+    {
+      "codeOnPlan": "GW209",
+      "code": "GW209",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW209"
+    },
+    {
+      "codeOnPlan": "GW210",
+      "code": "GW210",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW210"
+    },
+    {
+      "codeOnPlan": "GW213",
+      "code": "GW213",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW213"
+    },
+    {
+      "codeOnPlan": "GW215",
+      "code": "GW215",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW215"
+    },
+    {
+      "codeOnPlan": "GW217",
+      "code": "GW217",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW217"
+    },
+    {
+      "codeOnPlan": "GW218",
+      "code": "GW218",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW218"
+    },
+    {
+      "codeOnPlan": "GW219",
+      "code": "GW219",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW219"
+    },
+    {
+      "codeOnPlan": "GW302",
+      "code": "GW302",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW302"
+    },
+    {
+      "codeOnPlan": "GW307",
+      "code": "GW307",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW307"
+    },
+    {
+      "codeOnPlan": "GW309",
+      "code": "GW309",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW309"
+    },
+    {
+      "codeOnPlan": "GW310",
+      "code": "GW310",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW310"
+    },
+    {
+      "codeOnPlan": "GW313",
+      "code": "GW313",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW313"
+    },
+    {
+      "codeOnPlan": "GW317",
+      "code": "GW317",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW317"
+    },
+    {
+      "codeOnPlan": "GW319",
+      "code": "GW319",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW319"
+    },
+    {
+      "codeOnPlan": "GW320",
+      "code": "GW320",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW320"
+    },
+    {
+      "codeOnPlan": "GW321",
+      "code": "GW321",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW321"
+    },
+    {
+      "codeOnPlan": "GW402",
+      "code": "GW402",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW402"
+    },
+    {
+      "codeOnPlan": "GW407",
+      "code": "GW407",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW407"
+    },
+    {
+      "codeOnPlan": "GW409",
+      "code": "GW409",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW409"
+    },
+    {
+      "codeOnPlan": "GW410",
+      "code": "GW410",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW410"
+    },
+    {
+      "codeOnPlan": "GW413",
+      "code": "GW413",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW413"
+    },
+    {
+      "codeOnPlan": "GW415",
+      "code": "GW415",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW415"
+    },
+    {
+      "codeOnPlan": "GW417",
+      "code": "GW417",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW417"
+    },
+    {
+      "codeOnPlan": "GW419",
+      "code": "GW419",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW419"
+    },
+    {
+      "codeOnPlan": "GW502",
+      "code": "GW502",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW502"
+    },
+    {
+      "codeOnPlan": "GW507",
+      "code": "GW507",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW507"
+    },
+    {
+      "codeOnPlan": "GW509",
+      "code": "GW509",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW509"
+    },
+    {
+      "codeOnPlan": "GW510",
+      "code": "GW510",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW510"
+    },
+    {
+      "codeOnPlan": "GW513",
+      "code": "GW513",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW513"
+    },
+    {
+      "codeOnPlan": "GW515",
+      "code": "GW515",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW515"
+    },
+    {
+      "codeOnPlan": "GW517",
+      "code": "GW517",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW517"
+    },
+    {
+      "codeOnPlan": "GW519",
+      "code": "GW519",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW519"
+    },
+    {
+      "codeOnPlan": "GW602",
+      "code": "GW602",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW602"
+    },
+    {
+      "codeOnPlan": "GW607",
+      "code": "GW607",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW607"
+    },
+    {
+      "codeOnPlan": "GW609",
+      "code": "GW609",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW609"
+    },
+    {
+      "codeOnPlan": "GW610",
+      "code": "GW610",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW610"
+    },
+    {
+      "codeOnPlan": "GW613",
+      "code": "GW613",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW613"
+    },
+    {
+      "codeOnPlan": "GW615",
+      "code": "GW615",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW615"
+    },
+    {
+      "codeOnPlan": "GW617",
+      "code": "GW617",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW617"
+    },
+    {
+      "codeOnPlan": "GW619",
+      "code": "GW619",
+      "floor": "G",
+      "wing": "GW",
+      "type": "unknown",
+      "doorId": "D_GW619"
+    },
+    {
+      "codeOnPlan": "FE101",
+      "code": "FE101",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE101"
+    },
+    {
+      "codeOnPlan": "FE103",
+      "code": "FE103",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE103"
+    },
+    {
+      "codeOnPlan": "FE105",
+      "code": "FE105",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE105"
+    },
+    {
+      "codeOnPlan": "FE107",
+      "code": "FE107",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE107"
+    },
+    {
+      "codeOnPlan": "FE109",
+      "code": "FE109",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE109"
+    },
+    {
+      "codeOnPlan": "FE111",
+      "code": "FE111",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE111"
+    },
+    {
+      "codeOnPlan": "FE113",
+      "code": "FE113",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE113"
+    },
+    {
+      "codeOnPlan": "FE115",
+      "code": "FE115",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE115"
+    },
+    {
+      "codeOnPlan": "FE117",
+      "code": "FE117",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE117"
+    },
+    {
+      "codeOnPlan": "FE119",
+      "code": "FE119",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE119"
+    },
+    {
+      "codeOnPlan": "FE201",
+      "code": "FE201",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE201"
+    },
+    {
+      "codeOnPlan": "FE203",
+      "code": "FE203",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE203"
+    },
+    {
+      "codeOnPlan": "FE205",
+      "code": "FE205",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE205"
+    },
+    {
+      "codeOnPlan": "FE207",
+      "code": "FE207",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE207"
+    },
+    {
+      "codeOnPlan": "FE209",
+      "code": "FE209",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE209"
+    },
+    {
+      "codeOnPlan": "FE211",
+      "code": "FE211",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE211"
+    },
+    {
+      "codeOnPlan": "FE213",
+      "code": "FE213",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE213"
+    },
+    {
+      "codeOnPlan": "FE215",
+      "code": "FE215",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE215"
+    },
+    {
+      "codeOnPlan": "FE217",
+      "code": "FE217",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE217"
+    },
+    {
+      "codeOnPlan": "FE219",
+      "code": "FE219",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE219"
+    },
+    {
+      "codeOnPlan": "FE301",
+      "code": "FE301",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE301"
+    },
+    {
+      "codeOnPlan": "FE303",
+      "code": "FE303",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE303"
+    },
+    {
+      "codeOnPlan": "FE305",
+      "code": "FE305",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE305"
+    },
+    {
+      "codeOnPlan": "FE307",
+      "code": "FE307",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE307"
+    },
+    {
+      "codeOnPlan": "FE309",
+      "code": "FE309",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE309"
+    },
+    {
+      "codeOnPlan": "FE311",
+      "code": "FE311",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE311"
+    },
+    {
+      "codeOnPlan": "FE313",
+      "code": "FE313",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE313"
+    },
+    {
+      "codeOnPlan": "FE315",
+      "code": "FE315",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE315"
+    },
+    {
+      "codeOnPlan": "FE317",
+      "code": "FE317",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE317"
+    },
+    {
+      "codeOnPlan": "FE319",
+      "code": "FE319",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE319"
+    },
+    {
+      "codeOnPlan": "FE401",
+      "code": "FE401",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE401"
+    },
+    {
+      "codeOnPlan": "FE403",
+      "code": "FE403",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE403"
+    },
+    {
+      "codeOnPlan": "FE405",
+      "code": "FE405",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE405"
+    },
+    {
+      "codeOnPlan": "FE407",
+      "code": "FE407",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE407"
+    },
+    {
+      "codeOnPlan": "FE409",
+      "code": "FE409",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE409"
+    },
+    {
+      "codeOnPlan": "FE411",
+      "code": "FE411",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE411"
+    },
+    {
+      "codeOnPlan": "FE413",
+      "code": "FE413",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE413"
+    },
+    {
+      "codeOnPlan": "FE415",
+      "code": "FE415",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE415"
+    },
+    {
+      "codeOnPlan": "FE417",
+      "code": "FE417",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE417"
+    },
+    {
+      "codeOnPlan": "FE419",
+      "code": "FE419",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE419"
+    },
+    {
+      "codeOnPlan": "FE501",
+      "code": "FE501",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE501"
+    },
+    {
+      "codeOnPlan": "FE503",
+      "code": "FE503",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE503"
+    },
+    {
+      "codeOnPlan": "FE505",
+      "code": "FE505",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE505"
+    },
+    {
+      "codeOnPlan": "FE507",
+      "code": "FE507",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE507"
+    },
+    {
+      "codeOnPlan": "FE509",
+      "code": "FE509",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE509"
+    },
+    {
+      "codeOnPlan": "FE511",
+      "code": "FE511",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE511"
+    },
+    {
+      "codeOnPlan": "FE513",
+      "code": "FE513",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE513"
+    },
+    {
+      "codeOnPlan": "FE515",
+      "code": "FE515",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE515"
+    },
+    {
+      "codeOnPlan": "FE517",
+      "code": "FE517",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE517"
+    },
+    {
+      "codeOnPlan": "FE519",
+      "code": "FE519",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE519"
+    },
+    {
+      "codeOnPlan": "FE601",
+      "code": "FE601",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE601"
+    },
+    {
+      "codeOnPlan": "FE603",
+      "code": "FE603",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE603"
+    },
+    {
+      "codeOnPlan": "FE605",
+      "code": "FE605",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE605"
+    },
+    {
+      "codeOnPlan": "FE607",
+      "code": "FE607",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE607"
+    },
+    {
+      "codeOnPlan": "FE609",
+      "code": "FE609",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE609"
+    },
+    {
+      "codeOnPlan": "FE611",
+      "code": "FE611",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE611"
+    },
+    {
+      "codeOnPlan": "FE613",
+      "code": "FE613",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE613"
+    },
+    {
+      "codeOnPlan": "FE615",
+      "code": "FE615",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE615"
+    },
+    {
+      "codeOnPlan": "FE617",
+      "code": "FE617",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE617"
+    },
+    {
+      "codeOnPlan": "FE619",
+      "code": "FE619",
+      "floor": "F",
+      "wing": "FE",
+      "type": "unknown",
+      "doorId": "D_FE619"
+    },
+    {
+      "codeOnPlan": "FW102",
+      "code": "FW102",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW102"
+    },
+    {
+      "codeOnPlan": "FW104",
+      "code": "FW104",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW104"
+    },
+    {
+      "codeOnPlan": "FW106",
+      "code": "FW106",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW106"
+    },
+    {
+      "codeOnPlan": "FW108",
+      "code": "FW108",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW108"
+    },
+    {
+      "codeOnPlan": "FW110",
+      "code": "FW110",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW110"
+    },
+    {
+      "codeOnPlan": "FW112",
+      "code": "FW112",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW112"
+    },
+    {
+      "codeOnPlan": "FW114",
+      "code": "FW114",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW114"
+    },
+    {
+      "codeOnPlan": "FW116",
+      "code": "FW116",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW116"
+    },
+    {
+      "codeOnPlan": "FW118",
+      "code": "FW118",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW118"
+    },
+    {
+      "codeOnPlan": "FW120",
+      "code": "FW120",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW120"
+    },
+    {
+      "codeOnPlan": "FW202",
+      "code": "FW202",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW202"
+    },
+    {
+      "codeOnPlan": "FW204",
+      "code": "FW204",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW204"
+    },
+    {
+      "codeOnPlan": "FW206",
+      "code": "FW206",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW206"
+    },
+    {
+      "codeOnPlan": "FW208",
+      "code": "FW208",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW208"
+    },
+    {
+      "codeOnPlan": "FW210",
+      "code": "FW210",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW210"
+    },
+    {
+      "codeOnPlan": "FW212",
+      "code": "FW212",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW212"
+    },
+    {
+      "codeOnPlan": "FW214",
+      "code": "FW214",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW214"
+    },
+    {
+      "codeOnPlan": "FW216",
+      "code": "FW216",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW216"
+    },
+    {
+      "codeOnPlan": "FW218",
+      "code": "FW218",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW218"
+    },
+    {
+      "codeOnPlan": "FW220",
+      "code": "FW220",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW220"
+    },
+    {
+      "codeOnPlan": "FW302",
+      "code": "FW302",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW302"
+    },
+    {
+      "codeOnPlan": "FW304",
+      "code": "FW304",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW304"
+    },
+    {
+      "codeOnPlan": "FW306",
+      "code": "FW306",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW306"
+    },
+    {
+      "codeOnPlan": "FW308",
+      "code": "FW308",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW308"
+    },
+    {
+      "codeOnPlan": "FW310",
+      "code": "FW310",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW310"
+    },
+    {
+      "codeOnPlan": "FW312",
+      "code": "FW312",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW312"
+    },
+    {
+      "codeOnPlan": "FW314",
+      "code": "FW314",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW314"
+    },
+    {
+      "codeOnPlan": "FW316",
+      "code": "FW316",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW316"
+    },
+    {
+      "codeOnPlan": "FW318",
+      "code": "FW318",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW318"
+    },
+    {
+      "codeOnPlan": "FW320",
+      "code": "FW320",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW320"
+    },
+    {
+      "codeOnPlan": "FW402",
+      "code": "FW402",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW402"
+    },
+    {
+      "codeOnPlan": "FW404",
+      "code": "FW404",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW404"
+    },
+    {
+      "codeOnPlan": "FW406",
+      "code": "FW406",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW406"
+    },
+    {
+      "codeOnPlan": "FW408",
+      "code": "FW408",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW408"
+    },
+    {
+      "codeOnPlan": "FW410",
+      "code": "FW410",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW410"
+    },
+    {
+      "codeOnPlan": "FW412",
+      "code": "FW412",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW412"
+    },
+    {
+      "codeOnPlan": "FW414",
+      "code": "FW414",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW414"
+    },
+    {
+      "codeOnPlan": "FW416",
+      "code": "FW416",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW416"
+    },
+    {
+      "codeOnPlan": "FW418",
+      "code": "FW418",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW418"
+    },
+    {
+      "codeOnPlan": "FW420",
+      "code": "FW420",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW420"
+    },
+    {
+      "codeOnPlan": "FW502",
+      "code": "FW502",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW502"
+    },
+    {
+      "codeOnPlan": "FW504",
+      "code": "FW504",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW504"
+    },
+    {
+      "codeOnPlan": "FW506",
+      "code": "FW506",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW506"
+    },
+    {
+      "codeOnPlan": "FW508",
+      "code": "FW508",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW508"
+    },
+    {
+      "codeOnPlan": "FW510",
+      "code": "FW510",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW510"
+    },
+    {
+      "codeOnPlan": "FW512",
+      "code": "FW512",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW512"
+    },
+    {
+      "codeOnPlan": "FW514",
+      "code": "FW514",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW514"
+    },
+    {
+      "codeOnPlan": "FW516",
+      "code": "FW516",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW516"
+    },
+    {
+      "codeOnPlan": "FW518",
+      "code": "FW518",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW518"
+    },
+    {
+      "codeOnPlan": "FW520",
+      "code": "FW520",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW520"
+    },
+    {
+      "codeOnPlan": "FW602",
+      "code": "FW602",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW602"
+    },
+    {
+      "codeOnPlan": "FW604",
+      "code": "FW604",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW604"
+    },
+    {
+      "codeOnPlan": "FW606",
+      "code": "FW606",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW606"
+    },
+    {
+      "codeOnPlan": "FW608",
+      "code": "FW608",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW608"
+    },
+    {
+      "codeOnPlan": "FW610",
+      "code": "FW610",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW610"
+    },
+    {
+      "codeOnPlan": "FW612",
+      "code": "FW612",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW612"
+    },
+    {
+      "codeOnPlan": "FW614",
+      "code": "FW614",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW614"
+    },
+    {
+      "codeOnPlan": "FW616",
+      "code": "FW616",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW616"
+    },
+    {
+      "codeOnPlan": "FW618",
+      "code": "FW618",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW618"
+    },
+    {
+      "codeOnPlan": "FW620",
+      "code": "FW620",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW620"
+    },
+    {
+      "codeOnPlan": "FW652",
+      "code": "FW652",
+      "floor": "F",
+      "wing": "FW",
+      "type": "unknown",
+      "doorId": "D_FW652"
+    },
+    {
+      "codeOnPlan": "G701",
+      "code": "G701",
+      "floor": "G",
+      "wing": null,
+      "type": "lecture_hall",
+      "doorId": "D_G701"
+    },
+    {
+      "codeOnPlan": "G098",
+      "code": "G098",
+      "floor": "G",
+      "wing": null,
+      "type": "unknown",
+      "doorId": "D_G098"
+    },
+    {
+      "codeOnPlan": "GW_LIB_F",
+      "code": "GW_LIB_F",
+      "floor": "G",
+      "wing": "GW",
+      "type": "library",
+      "doorId": "D_GW_LIB_F"
+    },
+    {
+      "codeOnPlan": "GE_LIB_M",
+      "code": "GE_LIB_M",
+      "floor": "G",
+      "wing": "GE",
+      "type": "library",
+      "doorId": "D_GE_LIB_M"
+    },
+    {
+      "codeOnPlan": "GW_CAFE_F1",
+      "code": "GW_CAFE_F1",
+      "floor": "G",
+      "wing": "GW",
+      "type": "cafe",
+      "doorId": "D_GW_CAFE_F1"
+    },
+    {
+      "codeOnPlan": "GW_CAFE_F2",
+      "code": "GW_CAFE_F2",
+      "floor": "G",
+      "wing": "GW",
+      "type": "cafe",
+      "doorId": "D_GW_CAFE_F2"
+    },
+    {
+      "codeOnPlan": "GE_CAFE_M1",
+      "code": "GE_CAFE_M1",
+      "floor": "G",
+      "wing": "GE",
+      "type": "cafe",
+      "doorId": "D_GE_CAFE_M1"
+    },
+    {
+      "codeOnPlan": "GE_CAFE_M2",
+      "code": "GE_CAFE_M2",
+      "floor": "G",
+      "wing": "GE",
+      "type": "cafe",
+      "doorId": "D_GE_CAFE_M2"
+    }
+  ]
+}

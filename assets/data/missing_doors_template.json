@@ -1,0 +1,4707 @@
+{
+  "schemaVersion": "1.1",
+  "generatedAt": "2026-04-15T19:27:21.850176+00:00",
+  "sources": [
+    "smart_guide/assets/data/classguide_rooms.json",
+    "smart_guide/assets/data/navigation_graph_recreated.json",
+    "d:/Drawing for ythe project/map project - done.svg",
+    "smart_guide/assets/maps/GroundFloor.png",
+    "smart_guide/assets/maps/BranchFF1.png"
+  ],
+  "notes": [
+    "Each entry below is missing a real door object in navigation_graph_recreated.json.",
+    "Fill corridorNodeId and point, then copy the doorTemplate into floors.<floor>.doors and keep the matching room doorId.",
+    "SuggestedType is a safe default. Change it for rooms that are actually computer labs, bathrooms, prayer rooms, health services, stationery, or other special spaces.",
+    "The extracted labels section comes from named sign groups in the source SVG drawing. Exact room-code mapping still needs manual confirmation on the map."
+  ],
+  "entranceTranslations": {
+    "G_ENT_1": {
+      "en": "Entrance 1 (Women Entrance)",
+      "ar": "\u0627\u0644\u0645\u062f\u062e\u0644 1 (\u0645\u062f\u062e\u0644 \u0627\u0644\u0646\u0633\u0627\u0621)"
+    },
+    "G_ENT_3": {
+      "en": "Entrance 3 (Main Entrance)",
+      "ar": "\u0627\u0644\u0645\u062f\u062e\u0644 3 (\u0627\u0644\u0645\u062f\u062e\u0644 \u0627\u0644\u0631\u0626\u064a\u0633\u064a)"
+    },
+    "G_ENT_4": {
+      "en": "Entrance 4 (Male Entrance)",
+      "ar": "\u0627\u0644\u0645\u062f\u062e\u0644 4 (\u0645\u062f\u062e\u0644 \u0627\u0644\u0631\u062c\u0627\u0644)"
+    }
+  },
+  "drawingLabelsExtracted": [
+    {
+      "sourceId": "ai_lab",
+      "en": "AI Lab",
+      "ar": "\u0645\u062e\u062a\u0628\u0631 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a",
+      "suggestedType": "ai_lab",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "library_sign",
+      "en": "Library",
+      "ar": "\u0627\u0644\u0645\u0643\u062a\u0628\u0629",
+      "suggestedType": "library",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "health_sign",
+      "en": "Health Services",
+      "ar": "\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0635\u062d\u064a\u0629",
+      "suggestedType": "health_services",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "staionery_sign",
+      "en": "Stationery",
+      "ar": "\u0627\u0644\u0642\u0631\u0637\u0627\u0633\u064a\u0629",
+      "suggestedType": "stationery",
+      "source": "map project - done.svg",
+      "note": "Source drawing id is spelled staionery_sign."
+    },
+    {
+      "sourceId": "counter_sign",
+      "en": "Service Counter",
+      "ar": "\u0643\u0627\u0648\u0646\u062a\u0631 \u0627\u0644\u062e\u062f\u0645\u0629",
+      "suggestedType": "counter",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "cafeteria",
+      "en": "Cafeteria",
+      "ar": "\u0627\u0644\u0643\u0627\u0641\u064a\u062a\u064a\u0631\u064a\u0627",
+      "suggestedType": "cafeteria",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "bathroom_-_meeting_room",
+      "en": "Bathroom",
+      "ar": "\u062f\u0648\u0631\u0629 \u0645\u064a\u0627\u0647",
+      "suggestedType": "bathroom",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "bathroom_-_outside",
+      "en": "Bathroom",
+      "ar": "\u062f\u0648\u0631\u0629 \u0645\u064a\u0627\u0647",
+      "suggestedType": "bathroom",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "bathroom_-_reception",
+      "en": "Bathroom",
+      "ar": "\u062f\u0648\u0631\u0629 \u0645\u064a\u0627\u0647",
+      "suggestedType": "bathroom",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "prayer_room",
+      "en": "Prayer Room",
+      "ar": "\u0645\u0635\u0644\u0649",
+      "suggestedType": "prayer_room",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "prayer_room_-_reception",
+      "en": "Prayer Room",
+      "ar": "\u0645\u0635\u0644\u0649",
+      "suggestedType": "prayer_room",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "elevator",
+      "en": "Elevator",
+      "ar": "\u0645\u0635\u0639\u062f",
+      "suggestedType": "service",
+      "source": "map project - done.svg"
+    },
+    {
+      "sourceId": "stairs",
+      "en": "Stairs",
+      "ar": "\u062f\u0631\u062c",
+      "suggestedType": "service",
+      "source": "map project - done.svg"
+    }
+  ],
+  "missingDoors": [
+    {
+      "roomId": "FE101",
+      "codeOnPlan": "FE101",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE101",
+      "doorTemplate": {
+        "id": "D_FE101",
+        "roomId": "FE101",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE105",
+      "codeOnPlan": "FE105",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE105",
+      "doorTemplate": {
+        "id": "D_FE105",
+        "roomId": "FE105",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE107",
+      "codeOnPlan": "FE107",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE107",
+      "doorTemplate": {
+        "id": "D_FE107",
+        "roomId": "FE107",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE109",
+      "codeOnPlan": "FE109",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE109",
+      "doorTemplate": {
+        "id": "D_FE109",
+        "roomId": "FE109",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE113",
+      "codeOnPlan": "FE113",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE113",
+      "doorTemplate": {
+        "id": "D_FE113",
+        "roomId": "FE113",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE115",
+      "codeOnPlan": "FE115",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE115",
+      "doorTemplate": {
+        "id": "D_FE115",
+        "roomId": "FE115",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE117",
+      "codeOnPlan": "FE117",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE117",
+      "doorTemplate": {
+        "id": "D_FE117",
+        "roomId": "FE117",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE119",
+      "codeOnPlan": "FE119",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE119",
+      "doorTemplate": {
+        "id": "D_FE119",
+        "roomId": "FE119",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE203",
+      "codeOnPlan": "FE203",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE203",
+      "doorTemplate": {
+        "id": "D_FE203",
+        "roomId": "FE203",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE207",
+      "codeOnPlan": "FE207",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE207",
+      "doorTemplate": {
+        "id": "D_FE207",
+        "roomId": "FE207",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE209",
+      "codeOnPlan": "FE209",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE209",
+      "doorTemplate": {
+        "id": "D_FE209",
+        "roomId": "FE209",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE211",
+      "codeOnPlan": "FE211",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE211",
+      "doorTemplate": {
+        "id": "D_FE211",
+        "roomId": "FE211",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE213",
+      "codeOnPlan": "FE213",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE213",
+      "doorTemplate": {
+        "id": "D_FE213",
+        "roomId": "FE213",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE215",
+      "codeOnPlan": "FE215",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE215",
+      "doorTemplate": {
+        "id": "D_FE215",
+        "roomId": "FE215",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE217",
+      "codeOnPlan": "FE217",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE217",
+      "doorTemplate": {
+        "id": "D_FE217",
+        "roomId": "FE217",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE219",
+      "codeOnPlan": "FE219",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE219",
+      "doorTemplate": {
+        "id": "D_FE219",
+        "roomId": "FE219",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE301",
+      "codeOnPlan": "FE301",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE301",
+      "doorTemplate": {
+        "id": "D_FE301",
+        "roomId": "FE301",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE303",
+      "codeOnPlan": "FE303",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE303",
+      "doorTemplate": {
+        "id": "D_FE303",
+        "roomId": "FE303",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE305",
+      "codeOnPlan": "FE305",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE305",
+      "doorTemplate": {
+        "id": "D_FE305",
+        "roomId": "FE305",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE307",
+      "codeOnPlan": "FE307",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE307",
+      "doorTemplate": {
+        "id": "D_FE307",
+        "roomId": "FE307",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE309",
+      "codeOnPlan": "FE309",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE309",
+      "doorTemplate": {
+        "id": "D_FE309",
+        "roomId": "FE309",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE311",
+      "codeOnPlan": "FE311",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE311",
+      "doorTemplate": {
+        "id": "D_FE311",
+        "roomId": "FE311",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE313",
+      "codeOnPlan": "FE313",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE313",
+      "doorTemplate": {
+        "id": "D_FE313",
+        "roomId": "FE313",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE315",
+      "codeOnPlan": "FE315",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE315",
+      "doorTemplate": {
+        "id": "D_FE315",
+        "roomId": "FE315",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE317",
+      "codeOnPlan": "FE317",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE317",
+      "doorTemplate": {
+        "id": "D_FE317",
+        "roomId": "FE317",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE319",
+      "codeOnPlan": "FE319",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE319",
+      "doorTemplate": {
+        "id": "D_FE319",
+        "roomId": "FE319",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE401",
+      "codeOnPlan": "FE401",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE401",
+      "doorTemplate": {
+        "id": "D_FE401",
+        "roomId": "FE401",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE403",
+      "codeOnPlan": "FE403",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE403",
+      "doorTemplate": {
+        "id": "D_FE403",
+        "roomId": "FE403",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE405",
+      "codeOnPlan": "FE405",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE405",
+      "doorTemplate": {
+        "id": "D_FE405",
+        "roomId": "FE405",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE407",
+      "codeOnPlan": "FE407",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE407",
+      "doorTemplate": {
+        "id": "D_FE407",
+        "roomId": "FE407",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE409",
+      "codeOnPlan": "FE409",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE409",
+      "doorTemplate": {
+        "id": "D_FE409",
+        "roomId": "FE409",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE411",
+      "codeOnPlan": "FE411",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE411",
+      "doorTemplate": {
+        "id": "D_FE411",
+        "roomId": "FE411",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE413",
+      "codeOnPlan": "FE413",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE413",
+      "doorTemplate": {
+        "id": "D_FE413",
+        "roomId": "FE413",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE415",
+      "codeOnPlan": "FE415",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE415",
+      "doorTemplate": {
+        "id": "D_FE415",
+        "roomId": "FE415",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE417",
+      "codeOnPlan": "FE417",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE417",
+      "doorTemplate": {
+        "id": "D_FE417",
+        "roomId": "FE417",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE419",
+      "codeOnPlan": "FE419",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE419",
+      "doorTemplate": {
+        "id": "D_FE419",
+        "roomId": "FE419",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE501",
+      "codeOnPlan": "FE501",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE501",
+      "doorTemplate": {
+        "id": "D_FE501",
+        "roomId": "FE501",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE503",
+      "codeOnPlan": "FE503",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE503",
+      "doorTemplate": {
+        "id": "D_FE503",
+        "roomId": "FE503",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE505",
+      "codeOnPlan": "FE505",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE505",
+      "doorTemplate": {
+        "id": "D_FE505",
+        "roomId": "FE505",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE507",
+      "codeOnPlan": "FE507",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE507",
+      "doorTemplate": {
+        "id": "D_FE507",
+        "roomId": "FE507",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE509",
+      "codeOnPlan": "FE509",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE509",
+      "doorTemplate": {
+        "id": "D_FE509",
+        "roomId": "FE509",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE511",
+      "codeOnPlan": "FE511",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE511",
+      "doorTemplate": {
+        "id": "D_FE511",
+        "roomId": "FE511",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE513",
+      "codeOnPlan": "FE513",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE513",
+      "doorTemplate": {
+        "id": "D_FE513",
+        "roomId": "FE513",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE515",
+      "codeOnPlan": "FE515",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE515",
+      "doorTemplate": {
+        "id": "D_FE515",
+        "roomId": "FE515",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE517",
+      "codeOnPlan": "FE517",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE517",
+      "doorTemplate": {
+        "id": "D_FE517",
+        "roomId": "FE517",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE519",
+      "codeOnPlan": "FE519",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE519",
+      "doorTemplate": {
+        "id": "D_FE519",
+        "roomId": "FE519",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE601",
+      "codeOnPlan": "FE601",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE601",
+      "doorTemplate": {
+        "id": "D_FE601",
+        "roomId": "FE601",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE603",
+      "codeOnPlan": "FE603",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE603",
+      "doorTemplate": {
+        "id": "D_FE603",
+        "roomId": "FE603",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE605",
+      "codeOnPlan": "FE605",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE605",
+      "doorTemplate": {
+        "id": "D_FE605",
+        "roomId": "FE605",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE607",
+      "codeOnPlan": "FE607",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE607",
+      "doorTemplate": {
+        "id": "D_FE607",
+        "roomId": "FE607",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE609",
+      "codeOnPlan": "FE609",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE609",
+      "doorTemplate": {
+        "id": "D_FE609",
+        "roomId": "FE609",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE611",
+      "codeOnPlan": "FE611",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE611",
+      "doorTemplate": {
+        "id": "D_FE611",
+        "roomId": "FE611",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE613",
+      "codeOnPlan": "FE613",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE613",
+      "doorTemplate": {
+        "id": "D_FE613",
+        "roomId": "FE613",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE615",
+      "codeOnPlan": "FE615",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE615",
+      "doorTemplate": {
+        "id": "D_FE615",
+        "roomId": "FE615",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE617",
+      "codeOnPlan": "FE617",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE617",
+      "doorTemplate": {
+        "id": "D_FE617",
+        "roomId": "FE617",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FE619",
+      "codeOnPlan": "FE619",
+      "floor": "F",
+      "wing": "FE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FE619",
+      "doorTemplate": {
+        "id": "D_FE619",
+        "roomId": "FE619",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW106",
+      "codeOnPlan": "FW106",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW106",
+      "doorTemplate": {
+        "id": "D_FW106",
+        "roomId": "FW106",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW108",
+      "codeOnPlan": "FW108",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW108",
+      "doorTemplate": {
+        "id": "D_FW108",
+        "roomId": "FW108",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW110",
+      "codeOnPlan": "FW110",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW110",
+      "doorTemplate": {
+        "id": "D_FW110",
+        "roomId": "FW110",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW116",
+      "codeOnPlan": "FW116",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW116",
+      "doorTemplate": {
+        "id": "D_FW116",
+        "roomId": "FW116",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW118",
+      "codeOnPlan": "FW118",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW118",
+      "doorTemplate": {
+        "id": "D_FW118",
+        "roomId": "FW118",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW120",
+      "codeOnPlan": "FW120",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW120",
+      "doorTemplate": {
+        "id": "D_FW120",
+        "roomId": "FW120",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW204",
+      "codeOnPlan": "FW204",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW204",
+      "doorTemplate": {
+        "id": "D_FW204",
+        "roomId": "FW204",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW206",
+      "codeOnPlan": "FW206",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW206",
+      "doorTemplate": {
+        "id": "D_FW206",
+        "roomId": "FW206",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW208",
+      "codeOnPlan": "FW208",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW208",
+      "doorTemplate": {
+        "id": "D_FW208",
+        "roomId": "FW208",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW210",
+      "codeOnPlan": "FW210",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW210",
+      "doorTemplate": {
+        "id": "D_FW210",
+        "roomId": "FW210",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW212",
+      "codeOnPlan": "FW212",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW212",
+      "doorTemplate": {
+        "id": "D_FW212",
+        "roomId": "FW212",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW214",
+      "codeOnPlan": "FW214",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW214",
+      "doorTemplate": {
+        "id": "D_FW214",
+        "roomId": "FW214",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW216",
+      "codeOnPlan": "FW216",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW216",
+      "doorTemplate": {
+        "id": "D_FW216",
+        "roomId": "FW216",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW218",
+      "codeOnPlan": "FW218",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW218",
+      "doorTemplate": {
+        "id": "D_FW218",
+        "roomId": "FW218",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW220",
+      "codeOnPlan": "FW220",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW220",
+      "doorTemplate": {
+        "id": "D_FW220",
+        "roomId": "FW220",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW302",
+      "codeOnPlan": "FW302",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW302",
+      "doorTemplate": {
+        "id": "D_FW302",
+        "roomId": "FW302",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW304",
+      "codeOnPlan": "FW304",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW304",
+      "doorTemplate": {
+        "id": "D_FW304",
+        "roomId": "FW304",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW306",
+      "codeOnPlan": "FW306",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW306",
+      "doorTemplate": {
+        "id": "D_FW306",
+        "roomId": "FW306",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW308",
+      "codeOnPlan": "FW308",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW308",
+      "doorTemplate": {
+        "id": "D_FW308",
+        "roomId": "FW308",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW310",
+      "codeOnPlan": "FW310",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW310",
+      "doorTemplate": {
+        "id": "D_FW310",
+        "roomId": "FW310",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW312",
+      "codeOnPlan": "FW312",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW312",
+      "doorTemplate": {
+        "id": "D_FW312",
+        "roomId": "FW312",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW314",
+      "codeOnPlan": "FW314",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW314",
+      "doorTemplate": {
+        "id": "D_FW314",
+        "roomId": "FW314",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW316",
+      "codeOnPlan": "FW316",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW316",
+      "doorTemplate": {
+        "id": "D_FW316",
+        "roomId": "FW316",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW318",
+      "codeOnPlan": "FW318",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW318",
+      "doorTemplate": {
+        "id": "D_FW318",
+        "roomId": "FW318",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW320",
+      "codeOnPlan": "FW320",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW320",
+      "doorTemplate": {
+        "id": "D_FW320",
+        "roomId": "FW320",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW402",
+      "codeOnPlan": "FW402",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW402",
+      "doorTemplate": {
+        "id": "D_FW402",
+        "roomId": "FW402",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW404",
+      "codeOnPlan": "FW404",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW404",
+      "doorTemplate": {
+        "id": "D_FW404",
+        "roomId": "FW404",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW406",
+      "codeOnPlan": "FW406",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW406",
+      "doorTemplate": {
+        "id": "D_FW406",
+        "roomId": "FW406",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW408",
+      "codeOnPlan": "FW408",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW408",
+      "doorTemplate": {
+        "id": "D_FW408",
+        "roomId": "FW408",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW410",
+      "codeOnPlan": "FW410",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW410",
+      "doorTemplate": {
+        "id": "D_FW410",
+        "roomId": "FW410",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW412",
+      "codeOnPlan": "FW412",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW412",
+      "doorTemplate": {
+        "id": "D_FW412",
+        "roomId": "FW412",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW414",
+      "codeOnPlan": "FW414",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW414",
+      "doorTemplate": {
+        "id": "D_FW414",
+        "roomId": "FW414",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW416",
+      "codeOnPlan": "FW416",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW416",
+      "doorTemplate": {
+        "id": "D_FW416",
+        "roomId": "FW416",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW418",
+      "codeOnPlan": "FW418",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW418",
+      "doorTemplate": {
+        "id": "D_FW418",
+        "roomId": "FW418",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW420",
+      "codeOnPlan": "FW420",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW420",
+      "doorTemplate": {
+        "id": "D_FW420",
+        "roomId": "FW420",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW502",
+      "codeOnPlan": "FW502",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW502",
+      "doorTemplate": {
+        "id": "D_FW502",
+        "roomId": "FW502",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW504",
+      "codeOnPlan": "FW504",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW504",
+      "doorTemplate": {
+        "id": "D_FW504",
+        "roomId": "FW504",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW506",
+      "codeOnPlan": "FW506",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW506",
+      "doorTemplate": {
+        "id": "D_FW506",
+        "roomId": "FW506",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW508",
+      "codeOnPlan": "FW508",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW508",
+      "doorTemplate": {
+        "id": "D_FW508",
+        "roomId": "FW508",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW510",
+      "codeOnPlan": "FW510",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW510",
+      "doorTemplate": {
+        "id": "D_FW510",
+        "roomId": "FW510",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW512",
+      "codeOnPlan": "FW512",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW512",
+      "doorTemplate": {
+        "id": "D_FW512",
+        "roomId": "FW512",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW514",
+      "codeOnPlan": "FW514",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW514",
+      "doorTemplate": {
+        "id": "D_FW514",
+        "roomId": "FW514",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW516",
+      "codeOnPlan": "FW516",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW516",
+      "doorTemplate": {
+        "id": "D_FW516",
+        "roomId": "FW516",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW518",
+      "codeOnPlan": "FW518",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW518",
+      "doorTemplate": {
+        "id": "D_FW518",
+        "roomId": "FW518",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW520",
+      "codeOnPlan": "FW520",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW520",
+      "doorTemplate": {
+        "id": "D_FW520",
+        "roomId": "FW520",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW602",
+      "codeOnPlan": "FW602",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW602",
+      "doorTemplate": {
+        "id": "D_FW602",
+        "roomId": "FW602",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW604",
+      "codeOnPlan": "FW604",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW604",
+      "doorTemplate": {
+        "id": "D_FW604",
+        "roomId": "FW604",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW606",
+      "codeOnPlan": "FW606",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW606",
+      "doorTemplate": {
+        "id": "D_FW606",
+        "roomId": "FW606",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW608",
+      "codeOnPlan": "FW608",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW608",
+      "doorTemplate": {
+        "id": "D_FW608",
+        "roomId": "FW608",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW610",
+      "codeOnPlan": "FW610",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW610",
+      "doorTemplate": {
+        "id": "D_FW610",
+        "roomId": "FW610",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW612",
+      "codeOnPlan": "FW612",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW612",
+      "doorTemplate": {
+        "id": "D_FW612",
+        "roomId": "FW612",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW614",
+      "codeOnPlan": "FW614",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW614",
+      "doorTemplate": {
+        "id": "D_FW614",
+        "roomId": "FW614",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW616",
+      "codeOnPlan": "FW616",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW616",
+      "doorTemplate": {
+        "id": "D_FW616",
+        "roomId": "FW616",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW618",
+      "codeOnPlan": "FW618",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW618",
+      "doorTemplate": {
+        "id": "D_FW618",
+        "roomId": "FW618",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW620",
+      "codeOnPlan": "FW620",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW620",
+      "doorTemplate": {
+        "id": "D_FW620",
+        "roomId": "FW620",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "FW652",
+      "codeOnPlan": "FW652",
+      "floor": "F",
+      "wing": "FW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_FW652",
+      "doorTemplate": {
+        "id": "D_FW652",
+        "roomId": "FW652",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "G098",
+      "codeOnPlan": "G098",
+      "floor": "G",
+      "wing": null,
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_G098",
+      "doorTemplate": {
+        "id": "D_G098",
+        "roomId": "G098",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "G701",
+      "codeOnPlan": "G701",
+      "floor": "G",
+      "wing": null,
+      "currentType": "lecture_hall",
+      "suggestedType": "lecture_hall",
+      "labelEn": "Lecture Hall",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u0645\u062d\u0627\u0636\u0631\u0627\u062a",
+      "doorId": "D_G701",
+      "doorTemplate": {
+        "id": "D_G701",
+        "roomId": "G701",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE111",
+      "codeOnPlan": "GE111",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE111",
+      "doorTemplate": {
+        "id": "D_GE111",
+        "roomId": "GE111",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE118",
+      "codeOnPlan": "GE118",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE118",
+      "doorTemplate": {
+        "id": "D_GE118",
+        "roomId": "GE118",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE119",
+      "codeOnPlan": "GE119",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE119",
+      "doorTemplate": {
+        "id": "D_GE119",
+        "roomId": "GE119",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE127",
+      "codeOnPlan": "GE127",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE127",
+      "doorTemplate": {
+        "id": "D_GE127",
+        "roomId": "GE127",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE129",
+      "codeOnPlan": "GE129",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE129",
+      "doorTemplate": {
+        "id": "D_GE129",
+        "roomId": "GE129",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE130",
+      "codeOnPlan": "GE130",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE130",
+      "doorTemplate": {
+        "id": "D_GE130",
+        "roomId": "GE130",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE133",
+      "codeOnPlan": "GE133",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE133",
+      "doorTemplate": {
+        "id": "D_GE133",
+        "roomId": "GE133",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE135",
+      "codeOnPlan": "GE135",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE135",
+      "doorTemplate": {
+        "id": "D_GE135",
+        "roomId": "GE135",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE136",
+      "codeOnPlan": "GE136",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE136",
+      "doorTemplate": {
+        "id": "D_GE136",
+        "roomId": "GE136",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE201",
+      "codeOnPlan": "GE201",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "library",
+      "suggestedType": "library",
+      "labelEn": "Library",
+      "labelAr": "\u0627\u0644\u0645\u0643\u062a\u0628\u0629",
+      "doorId": "D_GE201",
+      "doorTemplate": {
+        "id": "D_GE201",
+        "roomId": "GE201",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE203",
+      "codeOnPlan": "GE203",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE203",
+      "doorTemplate": {
+        "id": "D_GE203",
+        "roomId": "GE203",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE204",
+      "codeOnPlan": "GE204",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE204",
+      "doorTemplate": {
+        "id": "D_GE204",
+        "roomId": "GE204",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE205",
+      "codeOnPlan": "GE205",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE205",
+      "doorTemplate": {
+        "id": "D_GE205",
+        "roomId": "GE205",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE206",
+      "codeOnPlan": "GE206",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE206",
+      "doorTemplate": {
+        "id": "D_GE206",
+        "roomId": "GE206",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE208",
+      "codeOnPlan": "GE208",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE208",
+      "doorTemplate": {
+        "id": "D_GE208",
+        "roomId": "GE208",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE211",
+      "codeOnPlan": "GE211",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE211",
+      "doorTemplate": {
+        "id": "D_GE211",
+        "roomId": "GE211",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE212",
+      "codeOnPlan": "GE212",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE212",
+      "doorTemplate": {
+        "id": "D_GE212",
+        "roomId": "GE212",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE214",
+      "codeOnPlan": "GE214",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE214",
+      "doorTemplate": {
+        "id": "D_GE214",
+        "roomId": "GE214",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE216",
+      "codeOnPlan": "GE216",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE216",
+      "doorTemplate": {
+        "id": "D_GE216",
+        "roomId": "GE216",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE301",
+      "codeOnPlan": "GE301",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE301",
+      "doorTemplate": {
+        "id": "D_GE301",
+        "roomId": "GE301",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE303",
+      "codeOnPlan": "GE303",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE303",
+      "doorTemplate": {
+        "id": "D_GE303",
+        "roomId": "GE303",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE304",
+      "codeOnPlan": "GE304",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE304",
+      "doorTemplate": {
+        "id": "D_GE304",
+        "roomId": "GE304",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE305",
+      "codeOnPlan": "GE305",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE305",
+      "doorTemplate": {
+        "id": "D_GE305",
+        "roomId": "GE305",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE306",
+      "codeOnPlan": "GE306",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE306",
+      "doorTemplate": {
+        "id": "D_GE306",
+        "roomId": "GE306",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE308",
+      "codeOnPlan": "GE308",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE308",
+      "doorTemplate": {
+        "id": "D_GE308",
+        "roomId": "GE308",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE311",
+      "codeOnPlan": "GE311",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE311",
+      "doorTemplate": {
+        "id": "D_GE311",
+        "roomId": "GE311",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE312",
+      "codeOnPlan": "GE312",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE312",
+      "doorTemplate": {
+        "id": "D_GE312",
+        "roomId": "GE312",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE314",
+      "codeOnPlan": "GE314",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE314",
+      "doorTemplate": {
+        "id": "D_GE314",
+        "roomId": "GE314",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE315",
+      "codeOnPlan": "GE315",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE315",
+      "doorTemplate": {
+        "id": "D_GE315",
+        "roomId": "GE315",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE316",
+      "codeOnPlan": "GE316",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE316",
+      "doorTemplate": {
+        "id": "D_GE316",
+        "roomId": "GE316",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE318",
+      "codeOnPlan": "GE318",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE318",
+      "doorTemplate": {
+        "id": "D_GE318",
+        "roomId": "GE318",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE322",
+      "codeOnPlan": "GE322",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE322",
+      "doorTemplate": {
+        "id": "D_GE322",
+        "roomId": "GE322",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE403",
+      "codeOnPlan": "GE403",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE403",
+      "doorTemplate": {
+        "id": "D_GE403",
+        "roomId": "GE403",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE404",
+      "codeOnPlan": "GE404",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE404",
+      "doorTemplate": {
+        "id": "D_GE404",
+        "roomId": "GE404",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE405",
+      "codeOnPlan": "GE405",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE405",
+      "doorTemplate": {
+        "id": "D_GE405",
+        "roomId": "GE405",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE406",
+      "codeOnPlan": "GE406",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE406",
+      "doorTemplate": {
+        "id": "D_GE406",
+        "roomId": "GE406",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE408",
+      "codeOnPlan": "GE408",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE408",
+      "doorTemplate": {
+        "id": "D_GE408",
+        "roomId": "GE408",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE411",
+      "codeOnPlan": "GE411",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE411",
+      "doorTemplate": {
+        "id": "D_GE411",
+        "roomId": "GE411",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE412",
+      "codeOnPlan": "GE412",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE412",
+      "doorTemplate": {
+        "id": "D_GE412",
+        "roomId": "GE412",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE414",
+      "codeOnPlan": "GE414",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE414",
+      "doorTemplate": {
+        "id": "D_GE414",
+        "roomId": "GE414",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE416",
+      "codeOnPlan": "GE416",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE416",
+      "doorTemplate": {
+        "id": "D_GE416",
+        "roomId": "GE416",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE418",
+      "codeOnPlan": "GE418",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE418",
+      "doorTemplate": {
+        "id": "D_GE418",
+        "roomId": "GE418",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE420",
+      "codeOnPlan": "GE420",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE420",
+      "doorTemplate": {
+        "id": "D_GE420",
+        "roomId": "GE420",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE501",
+      "codeOnPlan": "GE501",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE501",
+      "doorTemplate": {
+        "id": "D_GE501",
+        "roomId": "GE501",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE503",
+      "codeOnPlan": "GE503",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE503",
+      "doorTemplate": {
+        "id": "D_GE503",
+        "roomId": "GE503",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE504",
+      "codeOnPlan": "GE504",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE504",
+      "doorTemplate": {
+        "id": "D_GE504",
+        "roomId": "GE504",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE505",
+      "codeOnPlan": "GE505",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE505",
+      "doorTemplate": {
+        "id": "D_GE505",
+        "roomId": "GE505",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE511",
+      "codeOnPlan": "GE511",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE511",
+      "doorTemplate": {
+        "id": "D_GE511",
+        "roomId": "GE511",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE512",
+      "codeOnPlan": "GE512",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE512",
+      "doorTemplate": {
+        "id": "D_GE512",
+        "roomId": "GE512",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE514",
+      "codeOnPlan": "GE514",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE514",
+      "doorTemplate": {
+        "id": "D_GE514",
+        "roomId": "GE514",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE601",
+      "codeOnPlan": "GE601",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE601",
+      "doorTemplate": {
+        "id": "D_GE601",
+        "roomId": "GE601",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE603",
+      "codeOnPlan": "GE603",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE603",
+      "doorTemplate": {
+        "id": "D_GE603",
+        "roomId": "GE603",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE604",
+      "codeOnPlan": "GE604",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE604",
+      "doorTemplate": {
+        "id": "D_GE604",
+        "roomId": "GE604",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE605",
+      "codeOnPlan": "GE605",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE605",
+      "doorTemplate": {
+        "id": "D_GE605",
+        "roomId": "GE605",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE606",
+      "codeOnPlan": "GE606",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE606",
+      "doorTemplate": {
+        "id": "D_GE606",
+        "roomId": "GE606",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE608",
+      "codeOnPlan": "GE608",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE608",
+      "doorTemplate": {
+        "id": "D_GE608",
+        "roomId": "GE608",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE611",
+      "codeOnPlan": "GE611",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE611",
+      "doorTemplate": {
+        "id": "D_GE611",
+        "roomId": "GE611",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE612",
+      "codeOnPlan": "GE612",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE612",
+      "doorTemplate": {
+        "id": "D_GE612",
+        "roomId": "GE612",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE614",
+      "codeOnPlan": "GE614",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE614",
+      "doorTemplate": {
+        "id": "D_GE614",
+        "roomId": "GE614",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE616",
+      "codeOnPlan": "GE616",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE616",
+      "doorTemplate": {
+        "id": "D_GE616",
+        "roomId": "GE616",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE618",
+      "codeOnPlan": "GE618",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE618",
+      "doorTemplate": {
+        "id": "D_GE618",
+        "roomId": "GE618",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE620",
+      "codeOnPlan": "GE620",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GE620",
+      "doorTemplate": {
+        "id": "D_GE620",
+        "roomId": "GE620",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GE_LIB_M",
+      "codeOnPlan": "GE_LIB_M",
+      "floor": "G",
+      "wing": "GE",
+      "currentType": "library",
+      "suggestedType": "library",
+      "labelEn": "Library",
+      "labelAr": "\u0627\u0644\u0645\u0643\u062a\u0628\u0629",
+      "doorId": "D_GE_LIB_M",
+      "doorTemplate": {
+        "id": "D_GE_LIB_M",
+        "roomId": "GE_LIB_M",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW110",
+      "codeOnPlan": "GW110",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW110",
+      "doorTemplate": {
+        "id": "D_GW110",
+        "roomId": "GW110",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW115",
+      "codeOnPlan": "GW115",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW115",
+      "doorTemplate": {
+        "id": "D_GW115",
+        "roomId": "GW115",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW116",
+      "codeOnPlan": "GW116",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW116",
+      "doorTemplate": {
+        "id": "D_GW116",
+        "roomId": "GW116",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW117",
+      "codeOnPlan": "GW117",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW117",
+      "doorTemplate": {
+        "id": "D_GW117",
+        "roomId": "GW117",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW120",
+      "codeOnPlan": "GW120",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW120",
+      "doorTemplate": {
+        "id": "D_GW120",
+        "roomId": "GW120",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW128",
+      "codeOnPlan": "GW128",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW128",
+      "doorTemplate": {
+        "id": "D_GW128",
+        "roomId": "GW128",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW131",
+      "codeOnPlan": "GW131",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW131",
+      "doorTemplate": {
+        "id": "D_GW131",
+        "roomId": "GW131",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW132",
+      "codeOnPlan": "GW132",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW132",
+      "doorTemplate": {
+        "id": "D_GW132",
+        "roomId": "GW132",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW134",
+      "codeOnPlan": "GW134",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW134",
+      "doorTemplate": {
+        "id": "D_GW134",
+        "roomId": "GW134",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW202",
+      "codeOnPlan": "GW202",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW202",
+      "doorTemplate": {
+        "id": "D_GW202",
+        "roomId": "GW202",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW207",
+      "codeOnPlan": "GW207",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW207",
+      "doorTemplate": {
+        "id": "D_GW207",
+        "roomId": "GW207",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW209",
+      "codeOnPlan": "GW209",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW209",
+      "doorTemplate": {
+        "id": "D_GW209",
+        "roomId": "GW209",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW210",
+      "codeOnPlan": "GW210",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW210",
+      "doorTemplate": {
+        "id": "D_GW210",
+        "roomId": "GW210",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW213",
+      "codeOnPlan": "GW213",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW213",
+      "doorTemplate": {
+        "id": "D_GW213",
+        "roomId": "GW213",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW215",
+      "codeOnPlan": "GW215",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW215",
+      "doorTemplate": {
+        "id": "D_GW215",
+        "roomId": "GW215",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW217",
+      "codeOnPlan": "GW217",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW217",
+      "doorTemplate": {
+        "id": "D_GW217",
+        "roomId": "GW217",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW218",
+      "codeOnPlan": "GW218",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW218",
+      "doorTemplate": {
+        "id": "D_GW218",
+        "roomId": "GW218",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW219",
+      "codeOnPlan": "GW219",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW219",
+      "doorTemplate": {
+        "id": "D_GW219",
+        "roomId": "GW219",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW302",
+      "codeOnPlan": "GW302",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW302",
+      "doorTemplate": {
+        "id": "D_GW302",
+        "roomId": "GW302",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW307",
+      "codeOnPlan": "GW307",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW307",
+      "doorTemplate": {
+        "id": "D_GW307",
+        "roomId": "GW307",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW309",
+      "codeOnPlan": "GW309",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW309",
+      "doorTemplate": {
+        "id": "D_GW309",
+        "roomId": "GW309",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW310",
+      "codeOnPlan": "GW310",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW310",
+      "doorTemplate": {
+        "id": "D_GW310",
+        "roomId": "GW310",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW313",
+      "codeOnPlan": "GW313",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW313",
+      "doorTemplate": {
+        "id": "D_GW313",
+        "roomId": "GW313",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW317",
+      "codeOnPlan": "GW317",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW317",
+      "doorTemplate": {
+        "id": "D_GW317",
+        "roomId": "GW317",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW319",
+      "codeOnPlan": "GW319",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW319",
+      "doorTemplate": {
+        "id": "D_GW319",
+        "roomId": "GW319",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW320",
+      "codeOnPlan": "GW320",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW320",
+      "doorTemplate": {
+        "id": "D_GW320",
+        "roomId": "GW320",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW321",
+      "codeOnPlan": "GW321",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW321",
+      "doorTemplate": {
+        "id": "D_GW321",
+        "roomId": "GW321",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW407",
+      "codeOnPlan": "GW407",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW407",
+      "doorTemplate": {
+        "id": "D_GW407",
+        "roomId": "GW407",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW409",
+      "codeOnPlan": "GW409",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW409",
+      "doorTemplate": {
+        "id": "D_GW409",
+        "roomId": "GW409",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW410",
+      "codeOnPlan": "GW410",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW410",
+      "doorTemplate": {
+        "id": "D_GW410",
+        "roomId": "GW410",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW413",
+      "codeOnPlan": "GW413",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW413",
+      "doorTemplate": {
+        "id": "D_GW413",
+        "roomId": "GW413",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW415",
+      "codeOnPlan": "GW415",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW415",
+      "doorTemplate": {
+        "id": "D_GW415",
+        "roomId": "GW415",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW417",
+      "codeOnPlan": "GW417",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW417",
+      "doorTemplate": {
+        "id": "D_GW417",
+        "roomId": "GW417",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW419",
+      "codeOnPlan": "GW419",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW419",
+      "doorTemplate": {
+        "id": "D_GW419",
+        "roomId": "GW419",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW502",
+      "codeOnPlan": "GW502",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW502",
+      "doorTemplate": {
+        "id": "D_GW502",
+        "roomId": "GW502",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW507",
+      "codeOnPlan": "GW507",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW507",
+      "doorTemplate": {
+        "id": "D_GW507",
+        "roomId": "GW507",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW509",
+      "codeOnPlan": "GW509",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW509",
+      "doorTemplate": {
+        "id": "D_GW509",
+        "roomId": "GW509",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW510",
+      "codeOnPlan": "GW510",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW510",
+      "doorTemplate": {
+        "id": "D_GW510",
+        "roomId": "GW510",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW513",
+      "codeOnPlan": "GW513",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW513",
+      "doorTemplate": {
+        "id": "D_GW513",
+        "roomId": "GW513",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW515",
+      "codeOnPlan": "GW515",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW515",
+      "doorTemplate": {
+        "id": "D_GW515",
+        "roomId": "GW515",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW517",
+      "codeOnPlan": "GW517",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW517",
+      "doorTemplate": {
+        "id": "D_GW517",
+        "roomId": "GW517",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW519",
+      "codeOnPlan": "GW519",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW519",
+      "doorTemplate": {
+        "id": "D_GW519",
+        "roomId": "GW519",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW602",
+      "codeOnPlan": "GW602",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW602",
+      "doorTemplate": {
+        "id": "D_GW602",
+        "roomId": "GW602",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW607",
+      "codeOnPlan": "GW607",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW607",
+      "doorTemplate": {
+        "id": "D_GW607",
+        "roomId": "GW607",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW609",
+      "codeOnPlan": "GW609",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW609",
+      "doorTemplate": {
+        "id": "D_GW609",
+        "roomId": "GW609",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW610",
+      "codeOnPlan": "GW610",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW610",
+      "doorTemplate": {
+        "id": "D_GW610",
+        "roomId": "GW610",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW613",
+      "codeOnPlan": "GW613",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW613",
+      "doorTemplate": {
+        "id": "D_GW613",
+        "roomId": "GW613",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW615",
+      "codeOnPlan": "GW615",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW615",
+      "doorTemplate": {
+        "id": "D_GW615",
+        "roomId": "GW615",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW617",
+      "codeOnPlan": "GW617",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW617",
+      "doorTemplate": {
+        "id": "D_GW617",
+        "roomId": "GW617",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW619",
+      "codeOnPlan": "GW619",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "unknown",
+      "suggestedType": "classroom",
+      "labelEn": "Classroom",
+      "labelAr": "\u0642\u0627\u0639\u0629 \u062f\u0631\u0627\u0633\u064a\u0629",
+      "doorId": "D_GW619",
+      "doorTemplate": {
+        "id": "D_GW619",
+        "roomId": "GW619",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW_CAFE_F1",
+      "codeOnPlan": "GW_CAFE_F1",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "cafe",
+      "suggestedType": "cafe",
+      "labelEn": "Cafe",
+      "labelAr": "\u0645\u0642\u0647\u0649",
+      "doorId": "D_GW_CAFE_F1",
+      "doorTemplate": {
+        "id": "D_GW_CAFE_F1",
+        "roomId": "GW_CAFE_F1",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    },
+    {
+      "roomId": "GW_CAFE_F2",
+      "codeOnPlan": "GW_CAFE_F2",
+      "floor": "G",
+      "wing": "GW",
+      "currentType": "cafe",
+      "suggestedType": "cafe",
+      "labelEn": "Cafe",
+      "labelAr": "\u0645\u0642\u0647\u0649",
+      "doorId": "D_GW_CAFE_F2",
+      "doorTemplate": {
+        "id": "D_GW_CAFE_F2",
+        "roomId": "GW_CAFE_F2",
+        "corridorNodeId": "",
+        "point": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  ]
+}
