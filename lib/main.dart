@@ -4795,6 +4795,10 @@ const Map<String, String> _landmarkTranslationKeysById = {
   'G_ENT_1': 'landmark_women_entrance',
   'G_ENT_3': 'landmark_main_entrance',
   'G_ENT_4': 'landmark_male_entrance',
+  'Elevator and Stairs W': 'landmark_stairs_1',
+  'F_STAIR_1': 'landmark_stairs_1',
+  'Elevator and Stairs M': 'landmark_stairs_2',
+  'F_STAIR_2': 'landmark_stairs_2',
 };
 
 String _titleCase(String input) {
@@ -6187,7 +6191,10 @@ class _GuideHomePageState extends State<GuideHomePage> {
     double best = double.infinity;
     String? bestId;
     for (final room in graph.rooms) {
-      final p = graph.normPos[room.id];
+      final doorId = _doorNodeIdForRoom(graph, room);
+      final p =
+          (doorId == null ? null : _nodeNorm(graph, doorId)) ??
+          graph.normPos[room.id];
       if (p == null) continue;
       final d = (p - norm).distanceSquared;
       if (d < best) {
