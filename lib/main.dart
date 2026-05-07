@@ -5284,6 +5284,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
   Offset? _destImagePos;
   Offset? _cameraAnchorImagePos;
   double _mapRotationRadians = 0.0;
+  double _cameraZoom = 1.0;
   final Map<String, Offset> _manualNorm = {};
 
   Map<String, dynamic>? _navGraph;
@@ -6216,8 +6217,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
     _startNodeId = start?.id;
     _myNodeId = null;
     _myImagePos = start == null ? null : _nodeImagePos(graph, start.id);
-    _cameraAnchorImagePos = _myImagePos;
-    _mapRotationRadians = 0.0;
+    _focusMapOn(_myImagePos, zoom: 1.0);
     _fromLabel = start == null
         ? t('not_set')
         : '${_floorLabel()} @ ${_landmarkDisplay(start)}';
@@ -6240,6 +6240,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
       _destImagePos = _nodeImagePos(graph, destId);
       _toLabel = _placeDisplay(room, t);
       if (clearRoute) _clearRoute();
+      _focusMapOn(_destImagePos, zoom: 1.18);
       return;
     }
 
@@ -6248,6 +6249,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
     _destImagePos = _nodeImagePos(graph, destId);
     _toLabel = _placeDisplay(list.first, t);
     if (clearRoute) _clearRoute();
+    _focusMapOn(_destImagePos, zoom: 1.18);
   }
 
   void _setStatus(String key, bool ok, {Map<String, String> args = const {}}) {
@@ -6263,8 +6265,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
     _turns = null;
     _lastPath = [];
     _lastPathFloorId = null;
-    _mapRotationRadians = 0.0;
-    _cameraAnchorImagePos = _myImagePos;
+    _focusMapOn(_myImagePos, zoom: 1.0);
   }
 
   String _autoNodeId(NodeKind kind) {
@@ -6758,10 +6759,28 @@ class _GuideHomePageState extends State<GuideHomePage> {
 
   String _modeLabel() => _mode == SetMode.my ? t('mode_my') : t('mode_dest');
 
+  bool _isCompactPhoneLayout(BuildContext context) =>
+      MediaQuery.of(context).size.width < 700;
+
+  void _focusMapOn(
+    Offset? imagePos, {
+    double zoom = 1.0,
+    double rotation = 0.0,
+  }) {
+    _cameraAnchorImagePos = imagePos;
+    _cameraZoom = zoom;
+    _mapRotationRadians = rotation;
+  }
+
   void _setMode(SetMode mode) {
     if (_mode == mode) return;
     setState(() {
       _mode = mode;
+      if (_mode == SetMode.my) {
+        _focusMapOn(_myImagePos, zoom: 1.0);
+      } else {
+        _focusMapOn(_destImagePos, zoom: _destImagePos == null ? 1.0 : 1.18);
+      }
       _setStatus(
         _mode == SetMode.my
             ? 'status_tap_map_set_my'
@@ -6843,6 +6862,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
       _clearRoute();
       _setStatus('status_waiting', false);
       _mode = SetMode.my;
+      _cameraZoom = 1.0;
       _setDefaultStart();
       _setDefaultDestination();
     });
@@ -6877,7 +6897,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
         }
         _myNodeId = nodeId;
         _myImagePos = _nodeImagePos(graph, nodeId);
-        _cameraAnchorImagePos = _myImagePos;
+        _focusMapOn(_myImagePos, zoom: 1.0);
         _fromLabel = '${_floorLabel()} @ ${_displayNodeLabel(nodeId, graph)}';
         _setStatus('status_my_location_set', true);
       } else {
@@ -6894,6 +6914,9 @@ class _GuideHomePageState extends State<GuideHomePage> {
         _setStatus('status_destination_set', true);
       }
       _clearRoute();
+      if (_mode == SetMode.dest) {
+        _focusMapOn(_destImagePos, zoom: 1.22);
+      }
     });
   }
 
@@ -6942,6 +6965,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
       _destImagePos = _nodeImagePos(graph, destId);
       _toLabel = _placeDisplay(room, t);
       _clearRoute();
+      _focusMapOn(_destImagePos, zoom: 1.22);
       _setStatus('status_destination_selected', true);
     });
   }
@@ -7011,6 +7035,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
       _clearRoute();
       _setStatus('status_waiting', false);
       _mode = SetMode.my;
+      _cameraZoom = 1.0;
       _setDefaultStart();
       _setDefaultDestination();
     });
@@ -7104,9 +7129,12 @@ class _GuideHomePageState extends State<GuideHomePage> {
       _myImagePos = startSnap == null
           ? _myImagePos
           : _normToImage(startSnap, bounds);
-      _cameraAnchorImagePos = _myImagePos;
       _destImagePos = _normToImage(doorNorm, bounds);
-      _mapRotationRadians = _routeHeadingRotation(imageRoute);
+      _focusMapOn(
+        _destImagePos,
+        zoom: 1.15,
+        rotation: _routeHeadingRotation(imageRoute),
+      );
       _setStatus('status_route_ready', true);
     });
   }
@@ -7273,6 +7301,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
               textDirection: textDirection,
               cameraAnchorImagePos: _cameraAnchorImagePos,
               rotationRadians: _mapRotationRadians,
+              zoomMultiplier: _cameraZoom,
               onTapImage: _handleMapTapImage,
               onPickImage: _handlePickImage,
               onDragNodeStart: _handleEditNodeDragStart,
@@ -7307,6 +7336,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
   }
 
   Widget _buildUserPanel() {
+    final isCompactPhone = _isCompactPhoneLayout(context);
     final rooms = _filteredRooms();
     final graph = _graphForFloor();
     final entrances = graph.landmarks
@@ -7385,27 +7415,10 @@ class _GuideHomePageState extends State<GuideHomePage> {
                   _startNodeId = value;
                   _myNodeId = null;
                   _myImagePos = _nodeImagePos(graph, value);
-                  _cameraAnchorImagePos = _myImagePos;
+                  _focusMapOn(_myImagePos, zoom: 1.0);
                   _fromLabel =
                       '${_floorLabel()} @ ${_displayNodeLabel(value, graph)}';
                   _clearRoute();
-                });
-              },
-            ),
-            const SizedBox(height: 10),
-            TextField(
-              decoration: InputDecoration(
-                hintText: t('search_hint'),
-                prefixIcon: const Icon(Icons.search),
-                border: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(12)),
-                ),
-                isDense: true,
-              ),
-              onChanged: (value) {
-                setState(() {
-                  _searchQuery = value;
-                  _setDefaultDestination(clearRoute: true);
                 });
               },
             ),
@@ -7438,58 +7451,142 @@ class _GuideHomePageState extends State<GuideHomePage> {
               },
             ),
             const SizedBox(height: 12),
+            SizedBox(
+              width: double.infinity,
+              child: FilledButton.icon(
+                onPressed: _buildRoute,
+                icon: const Icon(Icons.arrow_upward_rounded),
+                label: Text(
+                  t('show_route'),
+                  style: const TextStyle(fontWeight: FontWeight.w800),
+                ),
+                style: FilledButton.styleFrom(
+                  backgroundColor: const Color(0xFF1F6FEB),
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              decoration: InputDecoration(
+                labelText: t('search_destination'),
+                hintText: t('search_hint'),
+                prefixIcon: const Icon(Icons.search),
+                border: const OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
+                isDense: true,
+              ),
+              onChanged: (value) {
+                setState(() {
+                  _searchQuery = value;
+                  _setDefaultDestination(clearRoute: true);
+                });
+              },
+            ),
+            const SizedBox(height: 10),
             Wrap(
               spacing: 8,
               runSpacing: 8,
               children: [
                 _iconActionButton(
-                  icon: Icons.alt_route,
-                  label: t('show_route'),
-                  color: const Color(0xFF1F6FEB),
-                  onTap: _buildRoute,
+                  icon: Icons.flag,
+                  label: t('pin_destination'),
+                  color: const Color(0xFFF97316),
+                  onTap: () => _setMode(SetMode.dest),
+                  compact: isCompactPhone,
                 ),
                 _iconActionButton(
                   icon: Icons.restart_alt,
                   label: t('reset'),
                   color: const Color(0xFF111827),
                   onTap: _reset,
+                  compact: isCompactPhone,
                 ),
               ],
             ),
             const SizedBox(height: 14),
-            Row(
-              children: [
-                Text(
+            if (isCompactPhone)
+              ExpansionTile(
+                tilePadding: EdgeInsets.zero,
+                title: Text(
                   t('facility_filters'),
                   style: const TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const Spacer(),
-                Tooltip(
+                trailing: Tooltip(
                   message: t('facility_clear_filters'),
                   child: IconButton(
                     onPressed: _clearFacilityFilters,
-                    icon: const Icon(Icons.filter_alt_off),
+                    icon: const Icon(Icons.filter_alt_off, size: 20),
                   ),
                 ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: facilityKinds.map(_facilityFilterChip).toList(),
-            ),
-            const SizedBox(height: 14),
-            Text(
-              t('facility_nearest'),
-              style: const TextStyle(fontWeight: FontWeight.w700),
-            ),
-            const SizedBox(height: 8),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: facilityKinds.map(_nearestFacilityButton).toList(),
-            ),
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Wrap(
+                      spacing: 6,
+                      runSpacing: 6,
+                      children: facilityKinds
+                          .map(
+                            (kind) => _facilityFilterChip(kind, compact: true),
+                          )
+                          .toList(),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      t('facility_nearest'),
+                      style: const TextStyle(fontWeight: FontWeight.w700),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    spacing: 6,
+                    runSpacing: 6,
+                    children: facilityKinds.map(_nearestFacilityButton).toList(),
+                  ),
+                ],
+              )
+            else ...[
+              Row(
+                children: [
+                  Text(
+                    t('facility_filters'),
+                    style: const TextStyle(fontWeight: FontWeight.w700),
+                  ),
+                  const Spacer(),
+                  Tooltip(
+                    message: t('facility_clear_filters'),
+                    child: IconButton(
+                      onPressed: _clearFacilityFilters,
+                      icon: const Icon(Icons.filter_alt_off),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: facilityKinds.map(_facilityFilterChip).toList(),
+              ),
+              const SizedBox(height: 14),
+              Text(
+                t('facility_nearest'),
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+              const SizedBox(height: 8),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: facilityKinds.map(_nearestFacilityButton).toList(),
+              ),
+            ],
             const SizedBox(height: 14),
             Row(
               children: [
@@ -8271,7 +8368,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
     );
   }
 
-  Widget _facilityFilterChip(FacilityKind kind) {
+  Widget _facilityFilterChip(FacilityKind kind, {bool compact = false}) {
     final active = _activeFacilityTypes.contains(kind.type);
     final color = kind.color;
     return Tooltip(
@@ -8280,8 +8377,8 @@ class _GuideHomePageState extends State<GuideHomePage> {
         onTap: () => _toggleFacilityFilter(kind.type),
         borderRadius: BorderRadius.circular(12),
         child: Container(
-          width: 44,
-          height: 44,
+          width: compact ? 38 : 44,
+          height: compact ? 38 : 44,
           decoration: BoxDecoration(
             color: active ? color.withValues(alpha: 0.15) : Colors.white,
             borderRadius: BorderRadius.circular(12),
@@ -8442,6 +8539,7 @@ class _MapView extends StatelessWidget {
   final TextDirection textDirection;
   final Offset? cameraAnchorImagePos;
   final double rotationRadians;
+  final double zoomMultiplier;
   final List<FacilityMarker> facilityMarkers;
   final List<_EditorNode> editorNodes;
   final List<_EditorEdge> editorEdges;
@@ -8466,6 +8564,7 @@ class _MapView extends StatelessWidget {
     required this.textDirection,
     required this.cameraAnchorImagePos,
     required this.rotationRadians,
+    required this.zoomMultiplier,
     required this.facilityMarkers,
     required this.editorNodes,
     required this.editorEdges,
@@ -8503,7 +8602,10 @@ class _MapView extends StatelessWidget {
               mapImage?.width.toDouble() ?? mapBounds.width,
               mapImage?.height.toDouble() ?? mapBounds.height,
             ),
+            focusImage: cameraAnchorImagePos,
+            focusScreen: Offset(size.width / 2, size.height * 0.42),
             rotationRadians: rotationRadians,
+            zoomMultiplier: zoomMultiplier,
           );
           final handleSize = enableNodeDrag ? 48.0 : 32.0;
           final handles = <Widget>[];
@@ -8647,6 +8749,7 @@ class MapTransform {
     Offset? focusImage,
     Offset? focusScreen,
     double rotationRadians = 0.0,
+    double zoomMultiplier = 1.0,
   }) {
     final cosTheta = math.cos(rotationRadians).abs();
     final sinTheta = math.sin(rotationRadians).abs();
@@ -8657,7 +8760,7 @@ class MapTransform {
     final scale = math.min(
       size.width / rotatedWidth,
       size.height / rotatedHeight,
-    );
+    ) * zoomMultiplier.clamp(1.0, 2.2);
     return MapTransform(
       scale: scale,
       imageSize: imageSize,
