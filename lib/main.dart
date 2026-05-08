@@ -54,7 +54,7 @@ class _ClassGuideAppState extends State<ClassGuideApp> {
 
 enum FloorKind { ff, gf }
 
-enum SetMode { my, dest }
+enum SetMode { none, my, dest }
 
 enum EditAction {
   none,
@@ -5269,7 +5269,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
   }
 
   FloorKind _floor = FloorKind.gf;
-  SetMode _mode = SetMode.my;
+  SetMode _mode = SetMode.none;
 
   late MapData _mapData;
   late Map<String, FloorGraph> _graphs;
@@ -5283,6 +5283,8 @@ class _GuideHomePageState extends State<GuideHomePage> {
   Offset? _myImagePos;
   Offset? _destImagePos;
   Offset? _cameraAnchorImagePos;
+  String? _floorOverlayText;
+  Timer? _floorOverlayTimer;
   double _mapRotationRadians = 0.0;
   double _cameraZoom = 1.0;
   final Map<String, Offset> _manualNorm = {};
@@ -5357,6 +5359,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
 
   @override
   void dispose() {
+    _floorOverlayTimer?.cancel();
     _adminTick.dispose();
     super.dispose();
   }
@@ -6757,7 +6760,11 @@ class _GuideHomePageState extends State<GuideHomePage> {
   String _floorLabel() =>
       _floor == FloorKind.ff ? t('floor_ff') : t('floor_gf');
 
-  String _modeLabel() => _mode == SetMode.my ? t('mode_my') : t('mode_dest');
+  String _modeLabel() => switch (_mode) {
+    SetMode.my => t('mode_my'),
+    SetMode.dest => t('mode_dest'),
+    SetMode.none => t('status_waiting'),
+  };
 
   bool _isCompactPhoneLayout(BuildContext context) =>
       MediaQuery.of(context).size.width < 700;
@@ -6772,21 +6779,29 @@ class _GuideHomePageState extends State<GuideHomePage> {
     _mapRotationRadians = rotation;
   }
 
+  void _showFloorOverlay() {
+    _floorOverlayTimer?.cancel();
+    _floorOverlayText = _floorLabel();
+    _floorOverlayTimer = Timer(const Duration(milliseconds: 1600), () {
+      if (!mounted) return;
+      setState(() {
+        _floorOverlayText = null;
+      });
+    });
+  }
+
   void _setMode(SetMode mode) {
-    if (_mode == mode) return;
     setState(() {
-      _mode = mode;
+      _mode = _mode == mode ? SetMode.none : mode;
       if (_mode == SetMode.my) {
         _focusMapOn(_myImagePos, zoom: 1.0);
-      } else {
+        _setStatus('status_tap_map_set_my', false);
+      } else if (_mode == SetMode.dest) {
         _focusMapOn(_destImagePos, zoom: _destImagePos == null ? 1.0 : 1.18);
+        _setStatus('status_tap_map_set_dest', false);
+      } else {
+        _setStatus('tap_map_set_location', false);
       }
-      _setStatus(
-        _mode == SetMode.my
-            ? 'status_tap_map_set_my'
-            : 'status_tap_map_set_dest',
-        false,
-      );
     });
   }
 
@@ -6861,10 +6876,11 @@ class _GuideHomePageState extends State<GuideHomePage> {
       _selectedRoomId = null;
       _clearRoute();
       _setStatus('status_waiting', false);
-      _mode = SetMode.my;
+      _mode = SetMode.none;
       _cameraZoom = 1.0;
       _setDefaultStart();
       _setDefaultDestination();
+      _showFloorOverlay();
     });
   }
 
@@ -6888,6 +6904,9 @@ class _GuideHomePageState extends State<GuideHomePage> {
       (imagePos.dy - bounds.top) / bounds.height,
     );
     final graph = _graphForFloor();
+    if (_mode == SetMode.none) {
+      return;
+    }
     setState(() {
       if (_mode == SetMode.my) {
         final nodeId = _nearestNode(graph, norm, walkOnly: true);
@@ -6900,7 +6919,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
         _focusMapOn(_myImagePos, zoom: 1.0);
         _fromLabel = '${_floorLabel()} @ ${_displayNodeLabel(nodeId, graph)}';
         _setStatus('status_my_location_set', true);
-      } else {
+      } else if (_mode == SetMode.dest) {
         final roomId = _nearestRoom(graph, norm);
         if (roomId == null) {
           _setStatus('status_no_nearby_room', false);
@@ -6917,6 +6936,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
       if (_mode == SetMode.dest) {
         _focusMapOn(_destImagePos, zoom: 1.22);
       }
+      _mode = SetMode.none;
     });
   }
 
@@ -6971,7 +6991,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
   }
 
   void _toggleMode() {
-    _setMode(_mode == SetMode.my ? SetMode.dest : SetMode.my);
+    _setMode(_mode == SetMode.dest ? SetMode.my : SetMode.dest);
   }
 
   void _toggleLanguage() {
@@ -7034,7 +7054,7 @@ class _GuideHomePageState extends State<GuideHomePage> {
       _toLabel = t('not_set');
       _clearRoute();
       _setStatus('status_waiting', false);
-      _mode = SetMode.my;
+      _mode = SetMode.none;
       _cameraZoom = 1.0;
       _setDefaultStart();
       _setDefaultDestination();
@@ -7131,10 +7151,11 @@ class _GuideHomePageState extends State<GuideHomePage> {
           : _normToImage(startSnap, bounds);
       _destImagePos = _normToImage(doorNorm, bounds);
       _focusMapOn(
-        _destImagePos,
-        zoom: 1.15,
+        _myImagePos ?? _destImagePos,
+        zoom: 1.06,
         rotation: _routeHeadingRotation(imageRoute),
       );
+      _mode = SetMode.none;
       _setStatus('status_route_ready', true);
     });
   }
@@ -7247,9 +7268,6 @@ class _GuideHomePageState extends State<GuideHomePage> {
   Widget _buildMapCard({bool showHeader = true}) {
     final mapImage = _floor == FloorKind.ff ? _ffImage : _gfImage;
     final mapBounds = _floor == FloorKind.ff ? ffBounds : gfBounds;
-    final mapTitle = _floor == FloorKind.ff
-        ? t('map_title_ff')
-        : t('map_title_gf');
     final textDirection = Directionality.of(context);
     final graph = _graphForFloor();
     final facilityMarkers = _facilityMarkersForFloor(graph, mapBounds);
@@ -7281,7 +7299,8 @@ class _GuideHomePageState extends State<GuideHomePage> {
                 crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
                   _pill(_floorLabel()),
-                  _pill(tr('mode_with_value', args: {'mode': _modeLabel()})),
+                  if (_mode != SetMode.none)
+                    _pill(tr('mode_with_value', args: {'mode': _modeLabel()})),
                   const SizedBox(width: 8),
                   _tabButton(
                     'FF',
@@ -7298,30 +7317,71 @@ class _GuideHomePageState extends State<GuideHomePage> {
             ),
           Padding(
             padding: const EdgeInsets.all(10),
-            child: _MapView(
-              routeImage: _routeImage,
-              myImagePos: _myImagePos,
-              destImagePos: _destImagePos,
-              floor: _floor,
-              mapImage: mapImage,
-              mapBounds: mapBounds,
-              facilityMarkers: facilityMarkers,
-              editorNodes: editorNodes,
-              editorEdges: editorEdges,
-              selectedNodeId: _selectedNodeId,
-              pendingEdgeFrom: _pendingEdgeFrom,
-              showEditor: _editMode,
-              enableNodeDrag: _canDragNodes(),
-              mapTitle: mapTitle,
-              textDirection: textDirection,
-              cameraAnchorImagePos: _cameraAnchorImagePos,
-              rotationRadians: _mapRotationRadians,
-              zoomMultiplier: _cameraZoom,
-              onTapImage: _handleMapTapImage,
-              onPickImage: _handlePickImage,
-              onDragNodeStart: _handleEditNodeDragStart,
-              onDragNodeUpdate: _handleEditNodeDragUpdate,
-              onDragNodeEnd: _handleEditNodeDragEnd,
+            child: Stack(
+              alignment: Alignment.topCenter,
+              children: [
+                _MapView(
+                  routeImage: _routeImage,
+                  myImagePos: _myImagePos,
+                  destImagePos: _destImagePos,
+                  floor: _floor,
+                  mapImage: mapImage,
+                  mapBounds: mapBounds,
+                  facilityMarkers: facilityMarkers,
+                  editorNodes: editorNodes,
+                  editorEdges: editorEdges,
+                  selectedNodeId: _selectedNodeId,
+                  pendingEdgeFrom: _pendingEdgeFrom,
+                  showEditor: _editMode,
+                  enableNodeDrag: _canDragNodes(),
+                  mapTitle: '',
+                  textDirection: textDirection,
+                  cameraAnchorImagePos: _cameraAnchorImagePos,
+                  rotationRadians: _mapRotationRadians,
+                  zoomMultiplier: _cameraZoom,
+                  onTapImage: _handleMapTapImage,
+                  onPickImage: _handlePickImage,
+                  onDragNodeStart: _handleEditNodeDragStart,
+                  onDragNodeUpdate: _handleEditNodeDragUpdate,
+                  onDragNodeEnd: _handleEditNodeDragEnd,
+                ),
+                IgnorePointer(
+                  child: AnimatedOpacity(
+                    opacity: _floorOverlayText == null ? 0.0 : 1.0,
+                    duration: const Duration(milliseconds: 250),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 12),
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.82),
+                          borderRadius: BorderRadius.circular(999),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x14000000),
+                              blurRadius: 12,
+                              offset: Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 12,
+                            vertical: 6,
+                          ),
+                          child: Text(
+                            _floorOverlayText ?? '',
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF334155),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           _buildLegend(),
@@ -7394,7 +7454,9 @@ class _GuideHomePageState extends State<GuideHomePage> {
             ),
             const SizedBox(height: 8),
             Text(
-              t('tap_mode_hint'),
+              _mode == SetMode.none
+                  ? t('tap_map_set_location')
+                  : t('tap_mode_hint'),
               style: const TextStyle(
                 fontSize: 12,
                 color: Color(0xFF4B5563),
@@ -8543,7 +8605,7 @@ class _AdminPanelPage extends StatelessWidget {
   }
 }
 
-class _MapView extends StatelessWidget {
+class _MapView extends StatefulWidget {
   final List<Offset> routeImage;
   final Offset? myImagePos;
   final Offset? destImagePos;
@@ -8595,8 +8657,96 @@ class _MapView extends StatelessWidget {
   });
 
   @override
+  State<_MapView> createState() => _MapViewState();
+}
+
+class _MapViewState extends State<_MapView>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _cameraController;
+  late Offset _displayFocusImage;
+  late Offset _startFocusImage;
+  late Offset _targetFocusImage;
+  late double _displayRotationRadians;
+  late double _startRotationRadians;
+  late double _targetRotationRadians;
+  late double _displayZoomMultiplier;
+  late double _startZoomMultiplier;
+  late double _targetZoomMultiplier;
+
+  Offset _resolvedFocusImage(_MapView source) {
+    final image = source.mapImage;
+    return source.cameraAnchorImagePos ??
+        Offset(
+          (image?.width.toDouble() ?? source.mapBounds.width) / 2,
+          (image?.height.toDouble() ?? source.mapBounds.height) / 2,
+        );
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    final focus = _resolvedFocusImage(widget);
+    _displayFocusImage = focus;
+    _startFocusImage = focus;
+    _targetFocusImage = focus;
+    _displayRotationRadians = widget.rotationRadians;
+    _startRotationRadians = widget.rotationRadians;
+    _targetRotationRadians = widget.rotationRadians;
+    _displayZoomMultiplier = widget.zoomMultiplier;
+    _startZoomMultiplier = widget.zoomMultiplier;
+    _targetZoomMultiplier = widget.zoomMultiplier;
+    _cameraController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1100),
+    )..addListener(_tickCamera);
+  }
+
+  @override
+  void didUpdateWidget(covariant _MapView oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    final nextFocus = _resolvedFocusImage(widget);
+    final focusChanged =
+        (nextFocus - _targetFocusImage).distanceSquared > 0.25;
+    final zoomChanged =
+        (widget.zoomMultiplier - _targetZoomMultiplier).abs() > 0.001;
+    final rotationChanged =
+        (widget.rotationRadians - _targetRotationRadians).abs() > 0.001;
+    if (!focusChanged && !zoomChanged && !rotationChanged) return;
+    _startFocusImage = _displayFocusImage;
+    _targetFocusImage = nextFocus;
+    _startZoomMultiplier = _displayZoomMultiplier;
+    _targetZoomMultiplier = widget.zoomMultiplier;
+    _startRotationRadians = _displayRotationRadians;
+    _targetRotationRadians = widget.rotationRadians;
+    _cameraController.forward(from: 0);
+  }
+
+  void _tickCamera() {
+    final t = Curves.easeInOutCubic.transform(_cameraController.value);
+    setState(() {
+      _displayFocusImage =
+          Offset.lerp(_startFocusImage, _targetFocusImage, t) ??
+          _targetFocusImage;
+      _displayZoomMultiplier =
+          ui.lerpDouble(_startZoomMultiplier, _targetZoomMultiplier, t) ??
+          _targetZoomMultiplier;
+      _displayRotationRadians =
+          ui.lerpDouble(_startRotationRadians, _targetRotationRadians, t) ??
+          _targetRotationRadians;
+    });
+  }
+
+  @override
+  void dispose() {
+    _cameraController
+      ..removeListener(_tickCamera)
+      ..dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    if (mapImage == null) {
+    if (widget.mapImage == null) {
       return const Center(
         child: Padding(
           padding: EdgeInsets.all(24),
@@ -8606,32 +8756,32 @@ class _MapView extends StatelessWidget {
     }
     return AspectRatio(
       aspectRatio:
-          (mapImage?.width.toDouble() ?? mapBounds.width) /
-          (mapImage?.height.toDouble() ?? mapBounds.height),
+          (widget.mapImage?.width.toDouble() ?? widget.mapBounds.width) /
+          (widget.mapImage?.height.toDouble() ?? widget.mapBounds.height),
       child: LayoutBuilder(
         builder: (context, constraints) {
           final size = Size(constraints.maxWidth, constraints.maxHeight);
           final transform = MapTransform.fromSize(
             size: size,
             imageSize: Size(
-              mapImage?.width.toDouble() ?? mapBounds.width,
-              mapImage?.height.toDouble() ?? mapBounds.height,
+              widget.mapImage?.width.toDouble() ?? widget.mapBounds.width,
+              widget.mapImage?.height.toDouble() ?? widget.mapBounds.height,
             ),
-            focusImage: cameraAnchorImagePos,
-            focusScreen: Offset(size.width / 2, size.height * 0.42),
-            rotationRadians: rotationRadians,
-            zoomMultiplier: zoomMultiplier,
+            focusImage: _displayFocusImage,
+            focusScreen: Offset(size.width / 2, size.height / 2),
+            rotationRadians: _displayRotationRadians,
+            zoomMultiplier: _displayZoomMultiplier,
           );
-          final handleSize = enableNodeDrag ? 48.0 : 32.0;
+          final handleSize = widget.enableNodeDrag ? 48.0 : 32.0;
           final handles = <Widget>[];
-          if (showEditor) {
-            for (final node in editorNodes) {
+          if (widget.showEditor) {
+            for (final node in widget.editorNodes) {
               final center = transform.imageToScreen(node.imagePos);
               final topLeft = Offset(
                 center.dx - handleSize / 2,
                 center.dy - handleSize / 2,
               );
-              final ringColor = enableNodeDrag
+              final ringColor = widget.enableNodeDrag
                   ? const Color(0xFF60A5FA).withValues(alpha: 0.25)
                   : const Color(0x00000000);
               handles.add(
@@ -8645,35 +8795,35 @@ class _MapView extends StatelessWidget {
                     onTapUp: (details) {
                       final screenPos = topLeft + details.localPosition;
                       final imgPos = transform.screenToImage(screenPos);
-                      onPickImage?.call(imgPos);
-                      onTapImage?.call(imgPos);
+                      widget.onPickImage?.call(imgPos);
+                      widget.onTapImage?.call(imgPos);
                     },
-                    onPanStart: enableNodeDrag
+                    onPanStart: widget.enableNodeDrag
                         ? (details) {
                             final screenPos = topLeft + details.localPosition;
                             final imgPos = transform.screenToImage(screenPos);
-                            onDragNodeStart?.call(node.id, imgPos);
+                            widget.onDragNodeStart?.call(node.id, imgPos);
                           }
                         : null,
-                    onPanUpdate: enableNodeDrag
+                    onPanUpdate: widget.enableNodeDrag
                         ? (details) {
                             final screenPos = topLeft + details.localPosition;
                             final imgPos = transform.screenToImage(screenPos);
-                            onDragNodeUpdate?.call(node.id, imgPos);
+                            widget.onDragNodeUpdate?.call(node.id, imgPos);
                           }
                         : null,
-                    onPanEnd: enableNodeDrag
-                        ? (_) => onDragNodeEnd?.call(node.id)
+                    onPanEnd: widget.enableNodeDrag
+                        ? (_) => widget.onDragNodeEnd?.call(node.id)
                         : null,
-                    onPanCancel: enableNodeDrag
-                        ? () => onDragNodeEnd?.call(node.id)
+                    onPanCancel: widget.enableNodeDrag
+                        ? () => widget.onDragNodeEnd?.call(node.id)
                         : null,
                     child: Container(
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
                           color: ringColor,
-                          width: enableNodeDrag ? 2.0 : 0.0,
+                          width: widget.enableNodeDrag ? 2.0 : 0.0,
                         ),
                         color: Colors.transparent,
                       ),
@@ -8687,7 +8837,7 @@ class _MapView extends StatelessWidget {
           bool isNearEditorNode(Offset imgPos) {
             final threshold = (handleSize / transform.scale) * 0.65;
             final limit = threshold * threshold;
-            for (final node in editorNodes) {
+            for (final node in widget.editorNodes) {
               final d = (node.imagePos - imgPos).distanceSquared;
               if (d <= limit) return true;
             }
@@ -8698,13 +8848,13 @@ class _MapView extends StatelessWidget {
             behavior: HitTestBehavior.opaque,
             onTapDown: (details) {
               final imgPos = transform.screenToImage(details.localPosition);
-              if (showEditor && isNearEditorNode(imgPos)) return;
-              onPickImage?.call(imgPos);
-              onTapImage?.call(imgPos);
+              if (widget.showEditor && isNearEditorNode(imgPos)) return;
+              widget.onPickImage?.call(imgPos);
+              widget.onTapImage?.call(imgPos);
             },
             child: InteractiveViewer(
               minScale: 1,
-              maxScale: 4,
+              maxScale: 7,
               boundaryMargin: const EdgeInsets.all(80),
               child: SizedBox(
                 width: size.width,
@@ -8714,21 +8864,21 @@ class _MapView extends StatelessWidget {
                     CustomPaint(
                       size: size,
                       painter: _MapPainter(
-                        routeImage: routeImage,
-                        myImagePos: myImagePos,
-                        destImagePos: destImagePos,
-                        floor: floor,
-                        mapImage: mapImage,
-                        mapBounds: mapBounds,
+                        routeImage: widget.routeImage,
+                        myImagePos: widget.myImagePos,
+                        destImagePos: widget.destImagePos,
+                        floor: widget.floor,
+                        mapImage: widget.mapImage,
+                        mapBounds: widget.mapBounds,
                         transform: transform,
-                        mapTitle: mapTitle,
-                        textDirection: textDirection,
-                        facilityMarkers: facilityMarkers,
-                        editorNodes: editorNodes,
-                        editorEdges: editorEdges,
-                        selectedNodeId: selectedNodeId,
-                        pendingEdgeFrom: pendingEdgeFrom,
-                        showEditor: showEditor,
+                        mapTitle: widget.mapTitle,
+                        textDirection: widget.textDirection,
+                        facilityMarkers: widget.facilityMarkers,
+                        editorNodes: widget.editorNodes,
+                        editorEdges: widget.editorEdges,
+                        selectedNodeId: widget.selectedNodeId,
+                        pendingEdgeFrom: widget.pendingEdgeFrom,
+                        showEditor: widget.showEditor,
                       ),
                     ),
                     ...handles,
@@ -9064,37 +9214,6 @@ class _MapPainter extends CustomPainter {
       ..strokeWidth = math.max(1.0, 2.0 * scale);
     canvas.drawRRect(frame, framePaint);
 
-    final titleOrigin = transform.imageToScreen(
-      Offset(
-        mapBounds.left + mapBounds.width * (18 / 63),
-        mapBounds.top + mapBounds.height * (6 / 63),
-      ),
-    );
-    final titleRect = RRect.fromRectAndRadius(
-      Rect.fromLTWH(
-        titleOrigin.dx,
-        titleOrigin.dy,
-        mapBounds.width * (28 / 63) * scale,
-        mapBounds.height * (5.5 / 63) * scale,
-      ),
-      const Radius.circular(16),
-    );
-    final titleBg = Paint()
-      ..color = const Color(0xFF1F6FEB).withValues(alpha: 0.09);
-    final titleStroke = Paint()
-      ..color = const Color(0xFF1F6FEB).withValues(alpha: 0.18)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2;
-    canvas.drawRRect(titleRect, titleBg);
-    canvas.drawRRect(titleRect, titleStroke);
-    _drawText(
-      canvas,
-      text: mapTitle,
-      offset: titleOrigin + Offset(8 * scale, 8 * scale),
-      color: const Color(0xFF111827).withValues(alpha: 0.75),
-      size: math.max(10.0, 12.0 * scale),
-      weight: FontWeight.w800,
-    );
   }
 
   void _drawText(
